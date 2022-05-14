@@ -10,7 +10,9 @@
           </button>
           <div class="collapse navbar-collapse"  id="navbarNavAltMarkup">
             <div class="navbar-nav">
-            
+
+              <a class="nav-link menuAdm" href="{{route('home')}}" >Home</a>
+
               <a class="nav-link menuAdm" href="{{route('user.index')}}" >Usuarios</a>
            
               <a class="nav-link menuAdm" href="{{route('pet.index')}}">Pets</a>
@@ -29,9 +31,11 @@
             
               <a class="nav-link menuAdm" href="{{route('perfil.usuario')}}">Minha Conta</a>
             
-              <a class="nav-link menuAdm" href="{{route('vacina.index')}}">Noticias e Curiosidades</a>
+              <a class="nav-link menuAdm" href="{{route('noticia.noticias')}}">Noticias e Curiosidades</a>
     
-              <a class="nav-link menuAdm" href="{{route('noticia.index')}}">Sobre</a>
+              <a class="nav-link menuAdm" href="{{route('noticia.sobre')}}">Sobre</a>
+
+              
     
             @if (Auth::user()==null)
                 

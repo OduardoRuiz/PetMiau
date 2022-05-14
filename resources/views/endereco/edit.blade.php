@@ -6,6 +6,8 @@
     
     <h1>editar endereco</h1>
 
+    h1>Pagina Usuario</h1>
+
     <form action="{{ route('endereco.update', $endereco->id) }}" method="post">
         @method('PATCH')
         @csrf

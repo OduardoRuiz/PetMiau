@@ -73,9 +73,7 @@
                     <tr>
                         <td>{{ $observacao1->texto }}</td>
                         <td>
-                            @php
-                                $uol= 1;
-                            @endphp
+                            
                             <div class="modal fade" {{ 'id=exampleModalCenter'.$observacao1->id.'' }} tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">

@@ -10,7 +10,8 @@
     </div>
  @endif
     <h1>Lista de endereco</h1>
-    <a href="{{route('endereco.create')}}" class="btn btn-sm btn-primary">Criar endereco</a>
+    <h1>Pagina do Admin</h1>
+    
     <div class="row">
         <table class="table table-striped">
             <thead>
@@ -24,6 +25,7 @@
                     <th>uf</th>
                     <th>cep</th>
                     <th>contato</th>
+                    <th>opção</th>
                     
                 </tr>
             </thead>
@@ -41,7 +43,7 @@
                     <td>{{ $endereco->contato }}</td>
                     <td>
                         
-                        <a href="{{ Route('endereco.edit', $endereco->id) }}" class="btn btn-sm btn-warning">Editar</a>
+                        
                         <form method="POST" action="{{ Route('endereco.destroy', $id = $endereco->id) }}" class="d-inline">
                             @method('DELETE')
                             @csrf

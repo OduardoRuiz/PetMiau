@@ -10,6 +10,7 @@
     </div>
  @endif
     <h1>Lista de produtos</h1>
+    <h1>Pagina do Admin</h1>
     <a href="{{route('tipo.create')}}" class="btn btn-sm btn-primary">Criar tipo</a>
     <div class="row">
         <table class="table table-striped">

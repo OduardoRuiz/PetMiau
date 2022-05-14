@@ -63,7 +63,7 @@ class UsersController extends Controller
             'imagem' => $imagem
         ]);
         session()->flash("sucesso", 'usuario atualizado com sucesso');
-        return redirect(route('user.index'));
+        return redirect(route('perfil.usuario'));
 
     }
 

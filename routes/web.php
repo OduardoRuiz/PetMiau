@@ -9,6 +9,7 @@ use App\Http\Controllers\TiposController;
 use App\Http\Controllers\VacinasController;
 use App\Http\Controllers\ObservacoesController;
 use App\Http\Controllers\UsersPerfilController;
+use App\Http\Controllers\Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,9 +21,7 @@ use App\Http\Controllers\UsersPerfilController;
 |
 */
 
-Route::get('', function () {
-    return view('/home');
-});
+Route::get('',[Controller::class,'home'])->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -85,6 +84,10 @@ Route::patch('/noticia/update/{noticia}',[NoticiasController::class,'update'])->
 
 Route::delete('/noticia/{id}', [NoticiasController::class, 'destroy'])->name('noticia.destroy');
 
+Route::get('/noticias',[NoticiasController::class,'noticias'])->name('noticia.noticias');
+
+Route::get('/sobre',[NoticiasController::class,'sobre'])->name('noticia.sobre');
+
 //Tipo
 
 Route::get('/tipo',[TiposController::class,'index'])->name('tipo.index');
@@ -113,10 +116,24 @@ Route::patch('/vacina/update/{vacina}',[VacinasController::class,'update'])->nam
 
 Route::delete('/vacina/{id}', [VacinasController::class, 'destroy'])->name('vacina.destroy');
 
+//Vacina Pet
+
+Route::get('/lista/{id}',[VacinasController::class,'lista'])->name('vacina_pet.index');
+
+Route::post('/criar/{id}',[VacinasController::class,'criar'])->name('vacina_pet.criar');
+
+Route::get('/vacinas/{id}',[VacinasController::class,'carregar'])->name('carregar');
+
+Route::delete('/apagar/{id}', [VacinasController::class, 'apagar'])->name('apagar');
+
 //Observação
 
 Route::get('/observacao/create/{id}',[ObservacoesController::class,'create'])->name('observacao.create');
 Route::patch('/observacao/store/{id}',[ObservacoesController::class,'store'])->name('observacao.store');
+
+Route::get('/store/{id}',[ObservacoesController::class,'carregar'])->name('carregar');
+
+Route::get('/observacoes/{id}',[ObservacoesController::class,'carregar'])->name('carregar');
 
 Route::delete('/observacao/{id}', [ObservacoesController::class, 'destroy'])->name('observacao.destroy');
 
@@ -131,7 +148,7 @@ Route::patch('/observacao/update/{observacao}',[ObservacoesController::class,'up
 
 Route::get('/usuario',[UsersPerfilController::class,'usuario'])->name('perfil.usuario');
 
-Route::get('/geral',[UsersPerfilController::class,'geral'])->name('perfil.geral');
+Route::get('/geral/{id}',[UsersPerfilController::class,'geral'])->name('perfil.geral');
 
 Route::get('/meuspets',[UsersPerfilController::class,'meuspets'])->name('perfil.meuspets');
 });

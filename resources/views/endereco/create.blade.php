@@ -3,6 +3,7 @@
     @include('layouts.menu')
 
     <h1>cadastrar endereço</h1>
+    <h1>Pagina Usuario</h1>
 
     <form action="{{route('endereco.store')}}" method="post">
     @csrf

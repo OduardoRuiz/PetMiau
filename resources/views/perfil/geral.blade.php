@@ -10,9 +10,11 @@
     <header>Pagina qr code</header>
 
     <main class="m-5">
+        <h1>Pagina qrcode</h1>
         <div>
+            <h2>TESTE DIGITAL</h2>
             <h2>foto</h2>
-            <img src="{{ $user->imagem }}" style="width:100px">
+        <img src="{{ $user->imagem }}" style="width:100px">
     
         </div>
     

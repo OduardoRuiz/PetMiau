@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Vacina;
 use App\Models\Pet;
+use App\Models\PetVacina;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class VacinasController extends Controller
 {
@@ -50,6 +53,55 @@ class VacinasController extends Controller
      return redirect(route('vacina.index'));
      
     }
+
+    public function criar(Request $request,Vacina $vacina,$id)
+    {
+        
+        $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
+        $nomevacinas = Vacina::all();
+        $id1=$id;
+
+        PetVacina::create([
+            'vacina_id' => $request->vacina_id,
+            'pet_id' => $id,
+            'data' => $request->data
+            ]);
+
+        
+            return redirect("/vacinas/$id");
+     
+    }
+    public function lista(PetVacina $petvacina,$id)
+    {
+        
+        $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
+        $nomevacinas = Vacina::all();
+        $id1=$id;
+
+
+        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1]);
+     
+    }
+    public function carregar($id){
+
+        $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
+        $nomevacinas = Vacina::all();
+        $id1=$id;
+
+        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1]);
+     
+    }
+
+    public function apagar($id)
+    {
+    $pet= DB::table('pet_vacina')->where('updated_at', '=', $id)->value('pet_id');
+    $vacinas= DB::table('pet_vacina')->where('updated_at', '=', $id)->delete();
+    
+    return redirect("/vacinas/$pet");
+     
+    }
+
+
 
 
 }

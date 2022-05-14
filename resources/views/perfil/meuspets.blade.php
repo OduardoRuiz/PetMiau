@@ -13,6 +13,7 @@
     <main class="m-5">
 
         <h1>meus pets</h1>
+        <h1>Pagina Usuario</h1>
 
         <div class="row">
 
@@ -24,7 +25,7 @@
                     <a href="" class="btn btn-sm btn-warning">Gerar QR Code</a>
                 </div>
                 <div>
-                    <a href="" class="btn btn-sm btn-warning">Vacinas</a>
+                    <a href="{{ Route('vacina_pet.index',$pet_id=$pet->id) }}" class="btn btn-sm btn-warning">Vacinas</a>
                 </div>
                 <div>
                     <a href="{{ Route('observacao.index',$pet_id=$pet->id) }}" class="btn btn-sm btn-warning">ver observação</a>

@@ -23,12 +23,13 @@ class UsersPerfilController extends Controller
         
         return view('perfil.usuario')->with(['user'=>$pefilusuario,'endereco'=>$pefilendereco]);
     }
-    public function geral()
+    public function geral($id)
 
     {
-        $pefilusuario=User::where('id', Auth()->user()->id)->first();
-        $pefilendereco=Endereco::where('user_id', Auth()->user()->id)->first();
-        $pefilpet=Pet::where('id', 13)->first();
+        $pefilusuario=User::where('id', $id)->first();
+        $pefilendereco=Endereco::where('user_id', $id)->first();
+        $pefilpet=Pet::where('user_id', $id)->first();
+        
 
         return view('perfil.geral')->with(['user'=>$pefilusuario,'endereco'=>$pefilendereco,'pet'=>$pefilpet]);
     }

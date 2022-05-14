@@ -10,6 +10,7 @@
     </div>
  @endif
     <h1>Lista de produtos</h1>
+    <h1>Pagina do Admin</h1>
     
     <div class="row">
         <table class="table table-striped">
@@ -18,6 +19,7 @@
                     <th>ID</th>
                     <th>Nome</th>
                     <th>imagem</th>
+                    <th>Opção</th>
                     
                 </tr>
             </thead>
@@ -30,7 +32,7 @@
 
                     <td>
                         
-                        <a href="{{Route('user.edit',$user->id)}}" class="btn btn-sm btn-warning">Editar</a>
+                        
                         <form method="POST" action="{{Route('user.destroy',$id=$user->id)}}" class="d-inline">
                             @method('DELETE')
                             @csrf

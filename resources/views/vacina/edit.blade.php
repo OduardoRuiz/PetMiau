@@ -3,6 +3,7 @@
     @include('layouts.menu')
 
     <h1>editar vacina</h1>
+    <h1>Pagina do Admin</h1>
 
     <form action="{{route('vacina.update', $vacina->id)}}" method="post">
     @method('PATCH')

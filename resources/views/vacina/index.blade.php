@@ -10,6 +10,7 @@
     </div>
  @endif
     <h1>Lista de produtos</h1>
+    <h1>Pagina do Admin</h1>
     <a href="{{route('vacina.create')}}" class="btn btn-sm btn-primary">Criar vacina</a>
     <div class="row">
         <table class="table table-striped">

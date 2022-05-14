@@ -20,7 +20,7 @@ class PetsController extends Controller
 
     public function create()
     {
-        return view('pet.create')->with(['tipos'=> Tipo::all(),'vacinas'=>Vacina::all()]);
+        return view('pet.create')->with(['tipos'=> Tipo::all(),]);
     }
 
     public function store(Request $request)
@@ -44,10 +44,9 @@ class PetsController extends Controller
 
         ]);
 
-        $pets->vacinas()->sync($request->vacinas);
 
         session()->flash("sucesso", 'pet cadastrado com sucesso');
-        return redirect(route('pet.index'));
+        return redirect(route('perfil.meuspets'));
 
     }
 

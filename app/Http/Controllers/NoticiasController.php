@@ -41,4 +41,13 @@ class NoticiasController extends Controller
         return redirect(route('noticia.index'));
 
     }
+    public function noticias()
+    {
+        return view('noticia.noticias')->with('noticias',Noticia::all());
+    }
+
+    public function sobre()
+    {
+        return view('noticia.sobre');
+    }
 }

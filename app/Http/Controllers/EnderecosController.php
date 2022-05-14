@@ -38,7 +38,7 @@ class EnderecosController extends Controller
 
     
         session()->flash("sucesso", 'endereco cadastrado com sucesso');
-        return redirect(route('endereco.index'));
+        return redirect(route('perfil.usuario'));
 
     }
 
@@ -63,7 +63,16 @@ class EnderecosController extends Controller
 
         ]);
         session()->flash("sucesso", 'endereco atualizado com sucesso');
-        return redirect(route('endereco.index'));
+        return redirect(route('perfil.usuario'));
 
+    }
+
+    public function destroy($id)
+    {
+    
+     Endereco::where('id', $id)->delete();
+     session()->flash('sucesso','endereço apagado apagado com sucesso');
+     return redirect(route('endereco.index'));
+     
     }
 }

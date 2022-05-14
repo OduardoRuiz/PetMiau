@@ -15,9 +15,7 @@ class Pet extends Model
         return $this->belongsTo(Tipo::class);
     }
 
-    public function vacinas(){
-        return $this->belongsToMany(Vacina::class);
-    }
+    
 
     
 

@@ -10,6 +10,7 @@
     </div>
  @endif
     <h1>Lista de produtos</h1>
+    <h1>Pagina do Admin</h1>
     <a href="{{ route('noticia.create') }}" class="btn btn-sm btn-primary">Criar noticia</a>
     <div class="row">
         <table class="table table-striped">
@@ -17,6 +18,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Noticia</th>
+                    <th>Opçãoes</th>
 
                 </tr>
             </thead>
@@ -24,11 +26,11 @@
                 @foreach ($noticias as $noticia)
                     <tr>
                         <td>{{ $noticia->id }}</td>
-                        <td>{{ $noticia->noticia }}</td>
+                        <td><pre>{{ $noticia->noticia }}</pre></td>
 
                         <td>
 
-                            <a href="" class="btn btn-sm btn-warning">Editar</a>
+                            <a href="{{ Route('noticia.edit', $noticia->id) }}" class="btn btn-sm btn-warning">Editar</a>
                             <form method="POST" action="" class="d-inline">
                                 @method('DELETE')
                                 @csrf

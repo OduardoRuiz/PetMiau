@@ -6,6 +6,8 @@
     <body>
 
         <h1>editar usuario</h1>
+        
+        <h1>Pagina Usuario</h1>
 
         <form action="{{ route('user.update', $user->id, $id = $user->id) }}" method="post" enctype="multipart/form-data">
             @method('patch')

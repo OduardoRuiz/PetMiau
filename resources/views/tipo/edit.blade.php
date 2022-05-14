@@ -3,6 +3,7 @@
     @include('layouts.menu')
 
     <h1>editar tipo</h1>
+    <h1>Pagina do Admin</h1>
 
     <form action="{{route('tipo.update', $tipo->id)}}" method="post">
     @method('PATCH')
