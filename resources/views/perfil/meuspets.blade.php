@@ -32,11 +32,11 @@
                             <div class="modal-body">
                                 @php
                                     $url='http://127.0.0.1:8000/geral/';
-                                    
+                                    $url1='https://petmiau-wkp2r.ondigitalocean.app/geral/';
                                 @endphp
 
                                 
-                                <img src={{'http://chart.apis.google.com/chart?cht=qr&chl=' .$url .$pet->id. '&chs=120x120'}} alt=" - QR code" />
+                                <img src={{'http://chart.apis.google.com/chart?cht=qr&chl=' .$url1 .$pet->id. '&chs=120x120'}} alt=" - QR code" />
 
                             </div>
                             <div class="modal-footer">
