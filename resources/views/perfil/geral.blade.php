@@ -14,7 +14,7 @@
         <div>
             <h2>TESTE DIGITAL</h2>
             <h2>foto</h2>
-        <img src="{{ $user->imagem }}" style="width:100px">
+        <img src="{{  asset($user->imagem )}}" style="width:100px">
     
         </div>
     
@@ -78,7 +78,7 @@
 
             <div>
                 <h2>foto</h2>
-                <img src="{{ $pet->imagem }}" style="width:100px">
+                <img src="{{ asset($pet->imagem )}}" style="width:100px">
         
             </div>
         

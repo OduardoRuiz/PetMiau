@@ -38,26 +38,35 @@
               
     
             @if (Auth::user()==null)
-                
+
+                <a class="nav-link menuAdm" href="{{route('login')}}">Login</a>
             @else
                 <div class="nav-link d-flex  menuAdm">{{Auth::user()->name  }}</div>
             @endif
           
               
-          
-              <div class="" >
-    
-              <form  method="POST" action="{{ route('logout') }}">
-                @csrf
-    
+          @if (Auth::user()==null)
+
+          <a class="nav-link menuAdm" href="{{route('register')}}">Registrar</a>
               
-                <x-responsive-nav-link :href="route('logout')" class=" navbar-nav d-flex  " style="text-decoration: underline;" onclick="event.preventDefault();
-                                            this.closest('form').submit();" >
-                  {{ __('Sair') }}
-                </x-responsive-nav-link>
-              </form>
-          
-              </div>
+          @else
+
+          <div class="" >
+    
+            <form  method="POST" action="{{ route('logout') }}">
+              @csrf
+  
+            
+              <x-responsive-nav-link :href="route('logout')" class=" navbar-nav d-flex  " style="text-decoration: underline;" onclick="event.preventDefault();
+                                          this.closest('form').submit();" >
+                {{ __('Sair') }}
+              </x-responsive-nav-link>
+            </form>
+        
+            </div>
+              
+          @endif
+             
     
     
             </div>

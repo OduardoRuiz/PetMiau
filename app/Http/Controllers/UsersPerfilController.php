@@ -26,9 +26,11 @@ class UsersPerfilController extends Controller
     public function geral($id)
 
     {
-        $pefilusuario=User::where('id', $id)->first();
-        $pefilendereco=Endereco::where('user_id', $id)->first();
-        $pefilpet=Pet::where('user_id', $id)->first();
+        $idusuario= Pet::where('id',$id )->value('user_id');
+        $pefilusuario=User::where('id',   $idusuario)->first();
+        $pefilendereco=Endereco::where('user_id',  $idusuario)->first();
+        $pefilpet=Pet::where('id',$id )->first();
+        
         
 
         return view('perfil.geral')->with(['user'=>$pefilusuario,'endereco'=>$pefilendereco,'pet'=>$pefilpet]);
@@ -37,8 +39,8 @@ class UsersPerfilController extends Controller
     public function meuspets()
 
     {
-        
-        $pefilpet=Pet::where('user_id', Auth()->user()->id)->paginate(3);
-        return view('perfil.meuspets')->with(['pets'=>$pefilpet]);
+        $endereco=Endereco::where('user_id', Auth()->user()->id)->first();
+        $petperfil=Pet::where('user_id', Auth()->user()->id)->simplePaginate(3);
+        return view('perfil.meuspets')->with(['pets'=>$petperfil,'endereco'=>$endereco]);
     }
 }

@@ -148,7 +148,8 @@ Route::patch('/observacao/update/{observacao}',[ObservacoesController::class,'up
 
 Route::get('/usuario',[UsersPerfilController::class,'usuario'])->name('perfil.usuario');
 
-Route::get('/geral/{id}',[UsersPerfilController::class,'geral'])->name('perfil.geral');
+
 
 Route::get('/meuspets',[UsersPerfilController::class,'meuspets'])->name('perfil.meuspets');
 });
+Route::get('/geral/{id}',[UsersPerfilController::class,'geral'])->name('perfil.geral');

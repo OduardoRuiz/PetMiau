@@ -31,7 +31,7 @@ class ObservacoesController extends Controller
             'pet_id' => $id
             ]);
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $id)->get();
-        session()->flash("sucesso", 'observação cadastrado com sucesso');
+       
         return redirect("/store/$id");
 
 
@@ -41,7 +41,7 @@ class ObservacoesController extends Controller
     public function carregar($id){
 
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $id)->get();
-        session()->flash("sucesso", 'observação cadastrado com sucesso');
+       
 
         return view('observacao.index')->with(['pet_id'=>$id,'observacoes'=>$obs]);
      
@@ -61,8 +61,9 @@ class ObservacoesController extends Controller
             'texto' => $request->texto
         ]);
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $observacao->pet_id)->get();
-        session()->flash("sucesso", 'observação atualizado com sucesso');
-        return view('observacao.index')->with(['pet_id'=>$observacao->pet_id,'observacoes'=>$obs]);
+       
+        
+        return redirect("/observacoes/$observacao->pet_id");
 
     }
 
@@ -74,7 +75,7 @@ class ObservacoesController extends Controller
 
         Observacao::where('id', $id)->delete();
 
-     session()->flash('sucesso','Usuario apagado com sucesso');
+     
 
      return redirect("/observacoes/$pet");
      

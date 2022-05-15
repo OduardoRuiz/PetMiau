@@ -21,10 +21,10 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         if ($request->imagem) {
-            $imagem = $request->file('imagem')->store('/public/usuarios');
+            $imagem = $request->file('imagem')->store('/public/users');
             $imagem = str_replace('public/', 'storage/', $imagem);
         } else {
-            $imagem = "storage/usuarios/imagempadrao.png";
+            $imagem = "storage/users/imagempadrao.png";
         } 
 
         $request->validate([
