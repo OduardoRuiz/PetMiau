@@ -10,7 +10,7 @@
     </div>
  @endif
     <h1>Lista de endereco</h1>
-    <h1>Pagina do Admin oiiii</h1>
+    <h1>Pagina do Admin oiiii tchau</h1>
     
     <div class="row">
         <table class="table table-striped">
