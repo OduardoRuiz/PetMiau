@@ -51,8 +51,12 @@
 
                 <div>
                     <img src="{{ $pet->imagem }}" style="width:200px"></div>
+                    <p>nome: {{$pet->nome}}</p>
+                    <p>Peso: {{$pet->peso}}kg</p>
+                    <p>Data Nascimento: {{$pet->data_nascimento}}</p>
 
-                <div>
+
+                <div>                    
                     @if (!$endereco)
 
                     <a href="{{route('endereco.create')}}" class="btn btn-sm btn-primary">Criar endereco</a>

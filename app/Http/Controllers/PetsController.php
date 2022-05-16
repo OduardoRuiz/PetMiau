@@ -78,7 +78,7 @@ class PetsController extends Controller
             'imagem' => $imagem
         ]);
         session()->flash("sucesso", 'pet atualizado com sucesso');
-        return redirect(route('pet.index'));
+        return redirect(route('perfil.meuspets'));
 
     }
 

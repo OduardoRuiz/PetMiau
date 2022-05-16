@@ -31,42 +31,42 @@
             <h2>endereço</h2>
             
             <div class="row">
-                <label for="">cep</label>
+                <label>cep</label>
                 {{ $endereco->cep }}
             </div>
     
             <div class="row">
-                <label for="">rua</label>
+                <label>rua</label>
                 {{ $endereco->rua }}
             </div>
     
             <div class="row">
-                <label for="">numero</label>
+                <label>numero</label>
                 {{ $endereco->numero }}
             </div>
     
             <div class="row">
-                <label for="">complemento</label>
+                <label>complemento</label>
                 {{ $endereco->complemento }}
             </div>
     
             <div class="row">
-                <label for="">bairro</label>
+                <label>bairro</label>
                 {{ $endereco->bairro }}
             </div>
     
             <div class="row">
-                <label for="">cidade</label>
+                <label>cidade</label>
                 {{ $endereco->cidade }}
             </div>
     
             <div class="row">
-                <label for="">uf</label>
+                <label>uf</label>
                 {{ $endereco->uf }}
             </div>
     
             <div class="row">
-                <label for="">contato</label>
+                <label>contato</label>
                {{ $endereco->contato }}
             </div>
     

@@ -22,6 +22,8 @@ use App\Http\Controllers\Controller;
 */
 
 Route::get('',[Controller::class,'home'])->name('home');
+Route::get('/home',[Controller::class,'home'])->name('home');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
