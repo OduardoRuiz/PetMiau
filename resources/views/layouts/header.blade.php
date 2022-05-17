@@ -16,6 +16,70 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     
+    <style>
+/* Backgraund de todas as telas*/
+body{
+    background-color: #f2fbff;
+}
+
+/* Menu */
+
+.navbar {
+    background-color: #502d732b;
+}
+
+/* cadastrar pet e usuário */
+
+.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .minhaConta{
+    text-align: center;
+}
+
+.botaoCadastrar {
+    background-color: #565F99;
+    color: beige;
+}
+
+.campoDigitar, .botaoCadastrar {
+    margin: auto;
+    width: 30rem;
+}
+.form-control, .botaoCadastrar {
+    border-radius: 10px;
+}
+
+.campoEspecial {
+    display: inline;
+    width: 0.5rem;
+}
+
+/* Meus Pets */
+
+.cssBotao{
+    max-width: 65rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 5rem;
+    text-align: center;
+    background: #fff;
+    border: 0.5rem solid #34495e;
+}
+
+
+.botaoPet {
+    width: 14rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+
+}
+
+.quadroPet{
+    border: 0.2rem solid #709CB2;
+    border-radius: 15px;
+    margin-right: 2rem;
+    background-color: #eaf6fb;
+
+}</style>
+    
 
     <title>Pet Miau</title>
 </head>
