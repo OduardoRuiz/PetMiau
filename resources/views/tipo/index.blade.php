@@ -3,22 +3,22 @@
     @include('layouts.menu')
 
     @if (session()->has('sucesso'))
-        
+
     <div>
         {{session()->get('sucesso')}}
 
     </div>
  @endif
-    <h1>Lista de produtos</h1>
-    <h1>Pagina do Admin</h1>
-    <a href="{{route('tipo.create')}}" class="btn btn-sm btn-primary">Criar tipo</a>
+
+    <h1>Criar tipos de pet <a href="{{route('tipo.create')}}" class="btn btn-md btn-primary ml-4">Criar</a></h1>
+
     <div class="row">
-        <table class="table table-striped">
+        <table class="table table-striped ml-3">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    
+
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +28,7 @@
                     <td>{{ $tipo->nome }}</td>
 
                     <td>
-                        
+
                         <a href="{{Route('tipo.edit',$tipo->id)}}" class="btn btn-sm btn-warning">Editar</a>
                         <form method="POST" action="{{Route('tipo.destroy',$id=$tipo->id)}}" class="d-inline">
                             @method('DELETE')
@@ -42,6 +42,6 @@
 
             </tbody>
         </table>
-    
+
 </body>
 </html>

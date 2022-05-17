@@ -2,44 +2,46 @@
 <body>
     @include('layouts.menu')
 
-    <h1>criar pet</h1>
-    <h1>Pagina Usuario</h1>
+
+    <h1 class="cadastrarPet">Cadastre seu pet</h1>
+    <p class="completePet">Complete os campos a seguir</p>
 
     <form action="{{Route('pet.store')}}" method="post" enctype="multipart/form-data" >
         @csrf
-        <div class="row">
-        <span class="form-label">Nome</span>
-        <input type="text" name="nome" class="form-control">
+        <div class="form-group campoDigitar">
+        <span class="form-label ml-2 ">Nome </span>
+        <input type="text" name="nome" class="form-control  " required placeholder="Digite o nome do seu Pet">
+
         </div>
 
-        
-        <div class="row">
-            <span class="form-label">idade</span>
+
+        <div class="form-group mt-4 campoDigitar">
+            <span class="form-label ml-2">Idade do seu pet</span>
             <input type="date"  name="data_nascimento" class="form-control" required>
         </div>
-        
-        
-        <div class="row">
-            <span class="form-label">Peso</span>
-            <input type="number" min="0" max="10000" name="peso"  class="form-control" required>
+
+
+        <div class="form-group mt-4 campoDigitar">
+            <span class="form-label ml-2">Peso</span>
+            <input type="number" min="0" max="10000" name="peso"  class="form-control" required placeholder="Digite o peso do seu Pet">
         </div>
 
-        
-        <div class="row">
-            <span class="form-label">Tipo</span>
-            <select class="form-select" name="tipo_id" required>
+
+        <div class="form-group mt-4 campoDigitar">
+            <span class="form-label ml-2">Seu pet é um:</span>
+            <select class="form-select form-control" name="tipo_id" required>
                 @foreach($tipos as $tipo)
                 <option value="{{$tipo->id}}">{{$tipo->nome}}</option>
                 @endforeach
             </select>
         </div>
 
-        <div class="row">
-            <span class="form-label">Imagem</span>
+        <div class="form-group mt-4 campoDigitar">
+            <span class="form-label ml-2">Adicione uma foto do seu pet</span>
             <input type="file" class="form-control" name="imagem">
         </div>
 
-        <button type="submit">salvar</button>
+        <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Cadastrar Pet</button>
     </form>
 
 </body>

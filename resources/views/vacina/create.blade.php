@@ -1,16 +1,17 @@
 @include('layouts.header')
 <body>
     @include('layouts.menu')
-    <h1>criar vacina</h1>
-    <h1>Pagina do Admin</h1>
+    <h1 class="cadastrarVacina">Criar vacina</h1>
 
     <form action="{{route('vacina.store')}}" method="post">
     @csrf
-    <span>Nome</span>
-    <input type="text" name="nome" id="">
+    <div class="form-group mt-3 campoDigitar">
+        <span class="form-label">Nome da vacina </span>
+        <input type="text" name="nome" id="" class="form-control">
+    </div>
 
-    <button type="submit">salvar</button>
+    <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">salvar</button>
     </form>
-    
+
 </body>
 </html>

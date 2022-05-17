@@ -12,9 +12,8 @@
 
     <main class="m-5">
 
-        <h1>Pagina Usuario</h1>
+        <h1 class="minhaConta">Minha conta</h1>
         <div>
-            <h2>foto</h2>
             <img src="{{ $user->imagem }}" style="width:100px">
 
         </div>
@@ -31,7 +30,7 @@
 
         </div>
 
-    
+
         @if (!$endereco)
             <div>
                 <a href="{{route('endereco.create')}}" class="btn btn-sm btn-primary">Criar endereco</a>

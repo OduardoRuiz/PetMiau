@@ -57,9 +57,9 @@
 
 
 
-    <h1>Comentarios</h1>
+    <h1>Observações</h1>
 
-    <h1>Pagina Usuario</h1>
+
 
     <div class="row">
         <table class="table table-striped">
@@ -73,7 +73,7 @@
                     <tr>
                         <td>{{ $observacao1->texto }}</td>
                         <td>
-                            
+
                             <div class="modal fade" {{ 'id=exampleModalCenter'.$observacao1->id.'' }} tabindex="-1" role="dialog"
                                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
@@ -94,7 +94,7 @@
                                                     <label for="" class="form-label">Texto</label>
                                                     <input type="text" name="texto" class="form-control" value="{{ $observacao1->texto }}">
                                                 </div>
-                                            
+
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"

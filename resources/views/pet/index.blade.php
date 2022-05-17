@@ -10,10 +10,10 @@
         </div>
     @endif
 
-    <h1>Lista de Pets digital</h1>
 
-    <h1>Pagina do Admin</h1>
-    
+
+    <h1>Lista dos pets</h1>
+
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -35,7 +35,7 @@
                         $nascimento =$pet->data_nascimento;
                         $idade = ((int)$hoje-(int)$nascimento)
                         @endphp
-                        
+
                         <td>{{ $pet->id }}</td>
                         <td><img src="{{ $pet->imagem }}" style="width:35px"></td>
                         <td>{{ $pet->nome }}</td>
@@ -49,14 +49,14 @@
 
                         <td>
 
-                            
+
                             <form method="POST" action="{{ Route('pet.destroy', $id = $pet->id) }}" class="d-inline">
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn btn-sm btn-danger"
                                     onsubmit="return remover()">Apagar</button>
                             </form>
-                            
+
                         </td>
                     </tr>
                 @endforeach

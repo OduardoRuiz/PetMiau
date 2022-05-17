@@ -10,12 +10,11 @@
     </div>
     @endif
 
-    <main class="m-5">
+    <main class="m-5 ">
 
-        <h1>meus pets</h1>
-        <h1>Pagina Usuario</h1>
 
-        <div class="row">
+
+        <div class="row ">
 
             @foreach ($pets as $pet)
             <!-- Modal do  QR CODE -->
@@ -42,12 +41,12 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Salvar</button>
-                           
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 quadroPet">
 
                 <div>
                     <img src="{{ $pet->imagem }}" style="width:200px"></div>
@@ -56,28 +55,28 @@
                     <p>Data Nascimento: {{$pet->data_nascimento}}</p>
 
 
-                <div>                    
+                <div>
                     @if (!$endereco)
 
-                    <a href="{{route('endereco.create')}}" class="btn btn-sm btn-primary">Criar endereco</a>
+                    <a href="{{route('endereco.create')}}" class="btn btn-outline-info botaoPet">Criar endereço</a>
 
                     @else
-                    <button type="button" class="btn btn-primary" data-toggle="modal" {{ 'data-target=#exampleModalCenter' . $pet->id . '' }}>
+                    <button type="button" class="btn btn-outline-info botaoPet" data-toggle="modal" {{ 'data-target=#exampleModalCenter' . $pet->id . '' }}>
                         Gerar QR Code
                     </button>
                     @endif
 
                 </div>
                 <div>
-                    <a href="{{ Route('vacina_pet.index', $pet_id = $pet->id) }}" class="btn btn-sm btn-warning">Vacinas</a>
+                    <a href="{{ Route('vacina_pet.index', $pet_id = $pet->id) }}" class="btn btn-outline-info botaoPet">Vacinas</a>
                 </div>
                 <div>
-                    <a href="{{ Route('observacao.index', $pet_id = $pet->id) }}" class="btn btn-sm btn-warning">ver
-                        observação</a>
+                    <a href="{{ Route('observacao.index', $pet_id = $pet->id) }}" class=" btn btn-outline-info botaoPet">
+                        Anotações</a>
                 </div>
                 <div>
-                    <a href="{{ Route('pet.edit', $pet->id) }}" class="btn btn-sm btn-warning">editar
-                        informaçoes</a>
+                    <a href="{{ Route('pet.edit', $pet->id) }}" class="btn btn-outline-info botaoPet">Editar
+                        informações</a>
                 </div>
 
             </div>

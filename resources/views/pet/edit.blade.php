@@ -2,32 +2,31 @@
 <body>
     @include('layouts.menu')
 
-    <h1>editar pet</h1>
+    <h1 class="cadastrarPet">Editar informações do pet</h1>
 
-    <h1>Pagina Usuario</h1>
 
     <form action="{{route('pet.update', $pet->id)}}" method="post" enctype="multipart/form-data">
     @method('PATCH')
     @csrf
-    <div class="row">
+    <div class="form-group mt-3 campoDigitar">
         <span class="form-label">Nome</span>
         <input type="text" name="nome" class="form-control" value="{{ $pet->nome }}" >
         </div>
 
-        
-        <div class="row">
+
+        <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Data de Nascimento</span>
             <input type="date"  name="data_nascimento" class="form-control" value="{{ $pet->data_nascimento}}">
         </div>
-        
-        
-        <div class="row">
+
+
+        <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Peso</span>
             <input type="number" min="0" max="10000" name="peso" class="form-control" value="{{ $pet->peso}}">
         </div>
 
-        
-        <div class="row">
+
+        <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Tipo</span>
 
             <select class="form-select" name="tipo_id" id="">
@@ -39,7 +38,7 @@
 
             </select>
         </div>
-        <div class="row">
+        <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Vacinas</span>
 
             <select class="form-select" name="vacinas[]" id="">
@@ -53,14 +52,14 @@
 
         </div>
 
-        <div class="row">
+        <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Imagem</span>
             <input type="file" class="form-control" name="imagem">
         </div>
 
 
-    <button type="submit">salvar</button>
+    <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block">Salvar informações</button>
     </form>
-    
+
 </body>
 </html>

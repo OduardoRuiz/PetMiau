@@ -3,22 +3,22 @@
     @include('layouts.menu')
 
     @if (session()->has('sucesso'))
-        
+
     <div>
         {{session()->get('sucesso')}}
 
     </div>
  @endif
-    <h1>Lista de produtos</h1>
-    <h1>Pagina do Admin</h1>
-    <a href="{{ route('noticia.create') }}" class="btn btn-sm btn-primary">Criar noticia</a>
+
+    <h1>Criação de notícias <a href="{{ route('noticia.create') }}" class="btn btn-md btn-primary ml-3">Criar noticia</a></h1>
+
     <div class="row">
-        <table class="table table-striped">
+        <table class="table table-striped ml-3">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Noticia</th>
-                    <th>Opçãoes</th>
+                    <th>Opções</th>
 
                 </tr>
             </thead>
