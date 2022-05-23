@@ -12,7 +12,7 @@
 
 
 
-    <h1>Lista dos pets</h1>
+    <h1>Lista dos pets forge</h1>
 
         <table class="table table-striped">
             <thead>
