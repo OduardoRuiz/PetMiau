@@ -5,7 +5,7 @@
 
     <h1>pagina Home</h1>
     
-    <h1>pagina para o todos</h1>
+   <img src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiauPng.png" alt="Logo pet miau">
     
     </main>
     
