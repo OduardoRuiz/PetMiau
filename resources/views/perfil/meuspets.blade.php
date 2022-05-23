@@ -18,8 +18,7 @@
 
             @foreach ($pets as $pet)
             <!-- Modal do  QR CODE -->
-            <div class="modal fade" {{ 'id=exampleModalCenter' . $pet->id . '' }} tabindex="-1" role="dialog"
-                 aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" {{ 'id=exampleModalCenter' . $pet->id . '' }} tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -31,7 +30,8 @@
                         <div class="modal-body">
                             @php
                             $url='http://127.0.0.1:8000/geral/';
-                            $url1='https://petmiau-wkp2r.ondigitalocean.app/geral/';
+                            $url1='http://68.183.115.206/geral/';
+                            
                             @endphp
 
 
@@ -40,7 +40,8 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-primary">Salvar</button>
+                            <button type="submit" onclick="download()" class="btn btn-primary">Salvar</button>
+                         
 
                         </div>
                     </div>
@@ -49,10 +50,11 @@
             <div class="col-md-4 quadroPet">
 
                 <div>
-                    <img src="{{ $pet->imagem }}" style="width:200px"></div>
-                    <p>nome: {{$pet->nome}}</p>
-                    <p>Peso: {{$pet->peso}}kg</p>
-                    <p>Data Nascimento: {{$pet->data_nascimento}}</p>
+                    <img src="{{ $pet->imagem }}" style="width:200px">
+                </div>
+                <p>nome: {{$pet->nome}}</p>
+                <p>Peso: {{$pet->peso}}kg</p>
+                <p>Data Nascimento: {{$pet->data_nascimento}}</p>
 
 
                 <div>
