@@ -50,11 +50,14 @@
             <div class="col-md-4 quadroPet">
 
                 <div>
-                    <img src="{{ $pet->imagem }}" style="width:200px">
+                    <img src="{{ $pet->imagem }}" class="imgpet" alt="imagem pet">
                 </div>
-                <p>nome: {{$pet->nome}}</p>
+                <div>
+                <span>nome: {{$pet->nome}} </span>
                 <p>Peso: {{$pet->peso}}kg</p>
-                <p>Data Nascimento: {{$pet->data_nascimento}}</p>
+                <p>Data Nascimento: {{$pet->data_nascimento}}</p> 
+                </div>
+            
 
 
                 <div>

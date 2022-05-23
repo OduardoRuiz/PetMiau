@@ -55,13 +55,29 @@ body{
 }
 
 .quadroPet{
-    border: 0.2rem solid #709CB2;
+    border: 0.1rem solid #709CB2;
     border-radius: 15px;
     margin-right: 2rem;
     background-color: #eaf6fb;
+    text-align: center;
+    
 
 }
+
 .logoimg{ 
     width: 75px;
     height: 75px;
+}
+
+.imgpet{
+    width: 200px;
+    height: 200px; 
+    border: 0.05rem solid #709CB2;
+    border-radius: 15px;
+    margin-top: 8px;
+}
+
+.cssquadro{ 
+    margin: 0;
+   
 }
