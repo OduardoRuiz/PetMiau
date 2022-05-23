@@ -1,103 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>QrCode Cadastro</title>
+    <!-- CSS only -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('resources/css/style.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    <header>Pagina qr code</header>
 
     <main class="m-5">
-        <h1>Pagina qrcode</h1>
-        <div>
-            <h2>TESTE DIGITAL</h2>
-            <h2>foto</h2>
-        <img src="{{  asset($user->imagem )}}" style="width:100px">
-    
-        </div>
-    
-        <div>
-           <h2>nome</h2>
-            <div class="row">
-                {{ $user->name }}
-            </div>
-    
-    
-        </div>
-    
-        <div>
-            <h2>endereço</h2>
-            
-            <div class="row">
-                <label>cep</label>
-                {{ $endereco->cep }}
-            </div>
-    
-            <div class="row">
-                <label>rua</label>
-                {{ $endereco->rua }}
-            </div>
-    
-            <div class="row">
-                <label>numero</label>
-                {{ $endereco->numero }}
-            </div>
-    
-            <div class="row">
-                <label>complemento</label>
-                {{ $endereco->complemento }}
-            </div>
-    
-            <div class="row">
-                <label>bairro</label>
-                {{ $endereco->bairro }}
-            </div>
-    
-            <div class="row">
-                <label>cidade</label>
-                {{ $endereco->cidade }}
-            </div>
-    
-            <div class="row">
-                <label>uf</label>
-                {{ $endereco->uf }}
-            </div>
-    
-            <div class="row">
-                <label>contato</label>
-               {{ $endereco->contato }}
-            </div>
-    
-    
-        </div>
+        <h1>QrCode Cadastro</h1>
 
-        <div>
-            <h1>pet</h1>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ asset($pet->imagem )}}" class="card-img-top" alt="Imagem Pet">
+            <div class="card-body">
 
-            <div>
-                <h2>foto</h2>
-                <img src="{{ asset($pet->imagem )}}" style="width:100px">
-        
+                <h5 class="card-title">Oi, meu nome é: {{ $pet->nome }}</h5>
+                <p class="card-text">minhas informações estão abaixo.</p>
+
             </div>
-        
-            <div>
-               <h2>nome</h2>
-                <div class="row">
-                    {{ $pet->nome }}
-                </div>
-        
-        
-            </div>
-
-
-
-
-
-
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Este é meu tutor : <img src="{{  asset($user->imagem )}}" style="width:100px"></li>
+                <li class="list-group-item">O nome dele(a) é: {{ $user->name }}</li>
+                <li class="list-group-item">Meu Bairro : {{ $endereco->bairro }}, minha cidade:{{ $endereco->cidade }}</li>
+                <li class="list-group-item">Contato do meu dono: {{ $endereco->contato }}</li>
+                <li class="list-group-item">Caso eu aparente estar perdido(a), por gentileza entre em contato, tenho certeza que estão sentindo minha falta</li>
+            </ul>
         </div>
     </main>
-    
+
 </body>
+
 </html>
