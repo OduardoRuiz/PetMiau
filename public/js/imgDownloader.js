@@ -1,6 +1,6 @@
-function download() {
+function download(imgparametro) {
     axios({
-        url: 'https://source.unsplash.com/random/500x500',
+        url: "https://chart.apis.google.com/chart?cht=qr&chl=http://68.183.115.206/geral/" + imgparametro + "&chs=120x120" ,
         method: 'GET',
         responseType: 'blob'
     })
@@ -14,6 +14,6 @@ function download() {
             link.click();
             document.body.removeChild(link);
         })
-        console.log("função")
+        console.log(imgparametro)
 }
 console.log("Arquivo")

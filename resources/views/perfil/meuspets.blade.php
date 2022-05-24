@@ -31,18 +31,23 @@
                             @php
                             $url='http://127.0.0.1:8000/geral/';
                             $url1='http://68.183.115.206/geral/';
-                            
+                            $petid = $pet->id;
+
                             @endphp
 
-
+                            <script>
+                                var petid = '<?php echo $petid; ?>'
+                                var imgparametro = petid
+                            </script>
                             <img src={{'http://chart.apis.google.com/chart?cht=qr&chl=' .$url1 .$pet->id. '&chs=120x120'}} alt=" - QR code" />
 
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="submit" onclick="download()" class="btn btn-primary">Salvar</button>
 
-                            
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="submit" onclick="download(imgparametro)" class="btn btn-primary">Salvar</button>
+
+
                         </div>
                     </div>
                 </div>
@@ -53,11 +58,11 @@
                     <img src="{{ $pet->imagem }}" class="imgpet" alt="imagem pet">
                 </div>
                 <div>
-                <span>nome: {{$pet->nome}} </span>
-                <p>Peso: {{$pet->peso}}kg</p>
-                <p>Data Nascimento: {{$pet->data_nascimento}}</p> 
+                    <span>nome: {{$pet->nome}} </span>
+                    <p>Peso: {{$pet->peso}}kg</p>
+                    <p>Data Nascimento: {{$pet->data_nascimento}}</p>
                 </div>
-            
+
 
 
                 <div>
