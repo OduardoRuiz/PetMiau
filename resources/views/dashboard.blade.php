@@ -1,17 +1,31 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+<style>
+    .bloqueioTexto {
+        font-size: 3rem;
+        text-align: center;
+    }
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    You're logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+    .bloqueioLink {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .bloqueioImg,
+    .bloqueioLink {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<p class="bloqueioTexto">Sem permissão para acessar a página</p>
+
+<form method="POST" action="{{ route('logout') }}">
+    @csrf
+
+
+    <x-responsive-nav-link :href="route('logout')" class="text-white navbar-nav d-flex bloqueioLink" style="text-decoration: underline;" onclick="event.preventDefault();
+                                        this.closest('form').submit();">
+        {{ __('Click aqui para voltar') }}
+    </x-responsive-nav-link>
+</form>
+<img class="bloqueioImg" src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiaulogotransparente1.png">

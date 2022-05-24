@@ -31,65 +31,9 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-Route::group(['middleware' => 'auth'], function(){
+//rotas admin 
 
-//User
-
-Route::get('/user',[UsersController::class,'index'])->name('user.index');
-
-Route::get('/user/edit/{user}',[UsersController::class,'edit'])->name('user.edit');
-
-Route::patch('/user/update/{user}',[UsersController::class,'update'])->name('user.update');
-
-Route::delete('/user/{id}', [UsersController::class, 'destroy'])->name('user.destroy');
-
-//Endereco
-
-Route::get('/endereco',[EnderecosController::class,'index'])->name('endereco.index');
-
-Route::get('/endereco/create',[EnderecosController::class,'create'])->name('endereco.create');
-
-Route::post('/endereco/store',[EnderecosController::class,'store'])->name('endereco.store');
-
-Route::get('/endereco/edit/{endereco}',[EnderecosController::class,'edit'])->name('endereco.edit');
-
-Route::patch('/endereco/update/{endereco}',[EnderecosController::class,'update'])->name('endereco.update');
-
-Route::delete('/endereco/{id}', [EnderecosController::class, 'destroy'])->name('endereco.destroy');
-
-
-//Pet
-
-Route::get('/pet',[PetsController::class,'index'])->name('pet.index');
-
-Route::get('/pet/create',[PetsController::class,'create'])->name('pet.create');
-
-Route::post('/pet/store',[PetsController::class,'store'])->name('pet.store');
-
-Route::get('/pet/edit/{pet}',[PetsController::class,'edit'])->name('pet.edit');
-
-Route::patch('/pet/update/{pet}',[PetsController::class,'update'])->name('pet.update');
-
-Route::delete('/pet/{id}', [PetsController::class, 'destroy'])->name('pet.destroy');
-
-//Noticia
-
-Route::get('/noticia',[NoticiasController::class,'index'])->name('noticia.index');
-
-Route::get('/noticia/create',[NoticiasController::class,'create'])->name('noticia.create');
-
-Route::post('/noticia/store',[NoticiasController::class,'store'])->name('noticia.store');
-
-Route::get('/noticia/edit/{noticia}',[NoticiasController::class,'edit'])->name('noticia.edit');
-
-Route::patch('/noticia/update/{noticia}',[NoticiasController::class,'update'])->name('noticia.update');
-
-Route::delete('/noticia/{id}', [NoticiasController::class, 'destroy'])->name('noticia.destroy');
-
-Route::get('/noticias',[NoticiasController::class,'noticias'])->name('noticia.noticias');
-
-Route::get('/sobre',[NoticiasController::class,'sobre'])->name('noticia.sobre');
-
+Route::group(['middleware' => 'IsAdmin'], function () {
 //Tipo
 
 Route::get('/tipo',[TiposController::class,'index'])->name('tipo.index');
@@ -104,7 +48,32 @@ Route::patch('/tipo/update/{tipo}',[TiposController::class,'update'])->name('tip
 
 Route::delete('/tipo/{id}', [TiposController::class, 'destroy'])->name('tipo.destroy');
 
-//Vacina
+
+
+//users 
+Route::get('/user',[UsersController::class,'index'])->name('user.index');
+Route::delete('/user/{id}', [UsersController::class, 'destroy'])->name('user.destroy');
+
+//endereço 
+Route::get('/endereco',[EnderecosController::class,'index'])->name('endereco.index');
+
+//pet
+Route::get('/pet',[PetsController::class,'index'])->name('pet.index');
+
+//noticias
+Route::get('/noticia',[NoticiasController::class,'index'])->name('noticia.index');
+
+Route::get('/noticia/create',[NoticiasController::class,'create'])->name('noticia.create');
+
+Route::post('/noticia/store',[NoticiasController::class,'store'])->name('noticia.store');
+
+Route::get('/noticia/edit/{noticia}',[NoticiasController::class,'edit'])->name('noticia.edit');
+
+Route::patch('/noticia/update/{noticia}',[NoticiasController::class,'update'])->name('noticia.update');
+
+Route::delete('/noticia/{id}', [NoticiasController::class, 'destroy'])->name('noticia.destroy');
+
+//vacina admin
 
 Route::get('/vacina',[VacinasController::class,'index'])->name('vacina.index');
 
@@ -117,6 +86,50 @@ Route::get('/vacina/edit/{vacina}',[VacinasController::class,'edit'])->name('vac
 Route::patch('/vacina/update/{vacina}',[VacinasController::class,'update'])->name('vacina.update');
 
 Route::delete('/vacina/{id}', [VacinasController::class, 'destroy'])->name('vacina.destroy');
+
+});
+
+//Fim rotas admin 
+
+
+//rotas autenticados
+
+Route::group(['middleware' => 'auth'], function(){
+
+//User
+Route::get('/user/edit/{user}',[UsersController::class,'edit'])->name('user.edit');
+Route::patch('/user/update/{user}',[UsersController::class,'update'])->name('user.update');
+
+
+//Endereco
+Route::get('/endereco/create',[EnderecosController::class,'create'])->name('endereco.create');
+
+Route::post('/endereco/store',[EnderecosController::class,'store'])->name('endereco.store');
+
+Route::get('/endereco/edit/{endereco}',[EnderecosController::class,'edit'])->name('endereco.edit');
+
+Route::patch('/endereco/update/{endereco}',[EnderecosController::class,'update'])->name('endereco.update');
+
+Route::delete('/endereco/{id}', [EnderecosController::class, 'destroy'])->name('endereco.destroy');
+
+
+//Pet
+
+
+Route::get('/pet/create',[PetsController::class,'create'])->name('pet.create');
+
+Route::post('/pet/store',[PetsController::class,'store'])->name('pet.store');
+
+Route::get('/pet/edit/{pet}',[PetsController::class,'edit'])->name('pet.edit');
+
+Route::patch('/pet/update/{pet}',[PetsController::class,'update'])->name('pet.update');
+
+Route::delete('/pet/{id}', [PetsController::class, 'destroy'])->name('pet.destroy');
+
+//Noticia
+Route::get('/noticias',[NoticiasController::class,'noticias'])->name('noticia.noticias');
+
+Route::get('/sobre',[NoticiasController::class,'sobre'])->name('noticia.sobre');
 
 //Vacina Pet
 
@@ -145,12 +158,9 @@ Route::get('/observacao/edit/{observacao}',[ObservacoesController::class,'edit']
 
 Route::patch('/observacao/update/{observacao}',[ObservacoesController::class,'update'])->name('observacao.update');
 
-
 //Perfil Usuario
 
 Route::get('/usuario',[UsersPerfilController::class,'usuario'])->name('perfil.usuario');
-
-
 
 Route::get('/meuspets',[UsersPerfilController::class,'meuspets'])->name('perfil.meuspets');
 });
