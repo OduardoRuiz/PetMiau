@@ -39,13 +39,13 @@
                                 var petid = '<?php echo $petid; ?>'
                                 var imgparametro = petid
                             </script>
-                            <img src={{'http://chart.apis.google.com/chart?cht=qr&chl=' .$url1 .$pet->id. '&chs=120x120'}} alt=" - QR code" />
+                            <img src={{'http://chart.apis.google.com/chart?cht=qr&chl=' .$url1 .$pet->id. '&chs=150x150'}} alt=" - QR code" />
 
                         </div>
                         <div class="modal-footer">
-
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                             <button type="submit" onclick="download(imgparametro)" class="btn btn-primary">Salvar</button>
+                            <a class="btn btn-outline-info" href={{'geral/'.$pet->id}} target="_blank">Abrir</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
 
 
                         </div>
