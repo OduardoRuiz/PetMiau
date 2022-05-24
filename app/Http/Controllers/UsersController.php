@@ -24,7 +24,7 @@ class UsersController extends Controller
             $imagem = $request->file('imagem')->store('/public/users');
             $imagem = str_replace('public/', 'storage/', $imagem);
         } else {
-            $imagem = "storage/users/imagempadrao.png";
+            $imagem = "https://storage.googleapis.com/petmiau-imagens/front-end/userdefault.png";
         } 
 
         $request->validate([

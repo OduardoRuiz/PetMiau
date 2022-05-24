@@ -39,7 +39,7 @@ class RegisteredUserController extends Controller
             'password' => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
-        $imagem = 'storage/users/imagempadrao.png';
+        $imagem = 'https://storage.googleapis.com/petmiau-imagens/front-end/userdefault.png';
 
         $user = User::create([
             'name' => $request->name,
