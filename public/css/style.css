@@ -4,21 +4,38 @@ body{
     background-color: #f2fbff;
 }
 
+/*Tela Registrar e Login*/
+
+.criarConta, .completeCampo, .cadastro {
+    text-align: center;
+}
+.completeCampo {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.botaoRegistrar, .botaoEntrar {
+    margin-top: 1rem;
+    margin-left: 0.3rem;
+}
+
 /* Menu */
 
 .navbar {
-    background-color: #502d732b;
+    border-bottom: solid;
+    border-color: rgb(243, 200, 183);
+    background-color:#e7f4fa;
 }
 
 /* cadastrar pet e usuário */
 
-.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .minhaConta{
+.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .minhaConta, .editNoticia{
     text-align: center;
 }
 
-.botaoCadastrar {
+.botaoCadastrar,   .botaoRegistrar, .botaoEntrar {
     background-color: #565F99;
-    color: beige;
+    color: rgb(247, 247, 237);
 }
 
 .campoDigitar, .botaoCadastrar {
@@ -34,6 +51,18 @@ body{
     width: 0.5rem;
 }
 
+/*Minha conta*/
+
+.minhaConta {
+    text-align: center;
+}
+.minhaContaPrincipal {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.enderecoConta {
+    font-weight: bold;
+}
 /* Meus Pets */
 
 .cssBotao{
@@ -61,28 +90,28 @@ body{
     background-color: #eaf6fb;
     text-align: center;
     margin-top: 15px;
-    
+
 
 }
 
-.logoimg{ 
+.logoimg{
     width: 75px;
     height: 75px;
 }
 
 .imgpet{
     width: 200px;
-    height: 200px; 
+    height: 200px;
     border: 0.05rem solid #709CB2;
     border-radius: 15px;
     margin-top: 8px;
 }
 
-.cssquadro{ 
+.cssquadro{
     margin: 0;
-   
+
 }
-.modal-body{ 
+.modal-body{
     text-align: center;
-    
+
 }

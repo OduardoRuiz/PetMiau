@@ -2,18 +2,19 @@
 <body>
     @include('layouts.menu')
 
-    <h1>editar noticia</h1>
-    <h1>Pagina do Admin</h1>
+    <h1 class="editNoticia">Editar notícia</h1>
+
 
     <form action="{{route('noticia.update', $noticia->id)}}" method="post">
     @method('PATCH')
     @csrf
-    <span>Noticia</span>
-    
-    <textarea class="form-control" name="noticia">{{$noticia->noticia}}</textarea>
+    <div class="form-group mt-3 campoDigitar">
+        <label for="" class="form-label">Notícia</label>
 
-    <button type="submit">salvar</button>
+        <textarea class="form-control" name="noticia">{{$noticia->noticia}}</textarea>
+    </div>
+    <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Salvar</button>
     </form>
-    
+
 </body>
 </html>

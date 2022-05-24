@@ -2,19 +2,19 @@
 <body>
     @include('layouts.menu')
 
-    <h1>editar tipo</h1>
-    <h1>Pagina do Admin</h1>
+    <h1 class="cadastrarTipo">Editar tipo do Pet</h1>
+
 
     <form action="{{route('tipo.update', $tipo->id)}}" method="post">
     @method('PATCH')
     @csrf
-    <div class="row">
+    <div class="form-group mt-3 campoDigitar">
         <label for="" class="form-label">Nome</label>
         <input type="text" name="nome" class="form-control" value="{{ $tipo->nome }}">
     </div>
 
-    <button type="submit">salvar</button>
+    <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Salvar</button>
     </form>
-    
+
 </body>
 </html>

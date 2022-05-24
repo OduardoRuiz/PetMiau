@@ -3,11 +3,11 @@
 <body>
     @include('layouts.menu')
 
-    <h1>adicionar vacina</h1>
 
-    <h1>Pagina Usuario</h1>
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+    <h1 class="ml-1">Vacinas do pet </h1>
+
+    <button type="button" class="btn btn-primary mb-2 ml-1" data-toggle="modal" data-target="#exampleModalCenter2">
         Adicionar Vacina
     </button>
 
@@ -50,9 +50,9 @@
         </div>
     </div>
 
-    
 
-    <div class="row">
+
+    <div class="row ml-1">
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -67,11 +67,11 @@
 
                          <td>@foreach ($nomes as $nome)
                             @if ($nome->id==$vacina->vacina_id)
-                              {{ $nome->nome }} 
+                              {{ $nome->nome }}
                             @endif
                         @endforeach
                             </td>
-                        
+
 
                         <td>{{ $vacina->data }}</td>
 
