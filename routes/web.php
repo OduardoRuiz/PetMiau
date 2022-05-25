@@ -123,10 +123,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::delete('/pet/{id}', [PetsController::class, 'destroy'])->name('pet.destroy');
 
-    //Noticia
-    Route::get('/noticias', [NoticiasController::class, 'noticias'])->name('noticia.noticias');
-
-    Route::get('/sobre', [NoticiasController::class, 'sobre'])->name('noticia.sobre');
+   
 
     //Vacina Pet
 
@@ -162,3 +159,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/meuspets', [UsersPerfilController::class, 'meuspets'])->name('perfil.meuspets');
 });
 Route::get('/geral/{id}', [UsersPerfilController::class, 'geral'])->name('perfil.geral');
+ //Noticia
+ Route::get('/noticias', [NoticiasController::class, 'noticias'])->name('noticia.noticias');
+
+ Route::get('/sobre', [NoticiasController::class, 'sobre'])->name('noticia.sobre');
