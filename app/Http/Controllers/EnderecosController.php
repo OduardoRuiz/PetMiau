@@ -22,12 +22,17 @@ class EnderecosController extends Controller
     public function store(Request $request)
     {
 
+        if ($request->complemento==null) {
+            $complemento = " ";
+        } else {
+            $complemento = $request->complemento;
+        }
        
         Endereco::create([
             'user_id' => Auth()->user()->id,
             'rua' => $request->rua,
             'numero' => $request->numero,
-            'complemento' => $request->complemento,
+            'complemento' => $complemento,
             'bairro' => $request->bairro,
             'cidade' => $request->cidade,
             'uf' => $request->uf,
@@ -48,13 +53,19 @@ class EnderecosController extends Controller
     }
 
     public function update(Request $request, Endereco $endereco)
-    {
+    { 
+
+        if ($request->complemento==null) {
+            $complemento = " ";
+        } else {
+            $complemento = $request->complemento;
+        }
 
         $endereco->update([
             'user_id' => Auth()->user()->id,
             'rua' => $request->rua,
             'numero' => $request->numero,
-            'complemento' => $request->complemento,
+            'complemento' => $complemento,
             'bairro' => $request->bairro,
             'cidade' => $request->cidade,
             'uf' => $request->uf,

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\Password;
 
 use Illuminate\Http\Request;
 use App\Models\User;
@@ -30,8 +32,12 @@ class UsersController extends Controller
         $request->validate([
             'email' => 'required|email|unique:users',
             'name' => 'required|max:255',
-            'password' => 'required|min:8'
+            'password' => 'required|min:7'
         ]);
+
+        
+
+        
         $request['password'] = Hash::make($request['password']);
 
         User::create([

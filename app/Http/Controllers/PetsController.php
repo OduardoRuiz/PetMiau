@@ -86,8 +86,8 @@ class PetsController extends Controller
     {
     
      Pet::where('id', $id)->delete();
-     session()->flash('sucesso','Usuario apagado com sucesso');
-     return redirect(route('pet.index'));
+     session()->flash('sucesso','Pet apagado com sucesso');
+     return redirect(route('perfil.meuspets'));
      
     }
 }

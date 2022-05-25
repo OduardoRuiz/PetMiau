@@ -47,17 +47,7 @@
                         <td>{{ $pet->user_id }}</td>
 
 
-                        <td>
-
-
-                            <form method="POST" action="{{ Route('pet.destroy', $id = $pet->id) }}" class="d-inline">
-                                @method('DELETE')
-                                @csrf
-                                <button type="submit" class="btn btn-sm btn-danger"
-                                    onsubmit="return remover()">Apagar</button>
-                            </form>
-
-                        </td>
+                        
                     </tr>
                 @endforeach
 
