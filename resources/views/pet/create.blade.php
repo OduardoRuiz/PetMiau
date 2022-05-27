@@ -16,8 +16,8 @@
 
 
         <div class="form-group mt-4 campoDigitar">
-            <span class="form-label ml-2">Idade do seu pet</span>
-            <input type="date"  name="data_nascimento" class="form-control" required>
+            <span class="form-label ml-2">Data de nascimento do seu pet</span>
+            <input type="date" name="data_nascimento" class="form-control datepicker" required>
         </div>
 
 

@@ -40,7 +40,8 @@ class UsersPerfilController extends Controller
 
     {
         $endereco=Endereco::where('user_id', Auth()->user()->id)->first();
+        $petcount=Pet::where('user_id', Auth()->user()->id)->count();
         $petperfil=Pet::where('user_id', Auth()->user()->id)->simplePaginate(3);
-        return view('perfil.meuspets')->with(['pets'=>$petperfil,'endereco'=>$endereco]);
+        return view('perfil.meuspets')->with(['pets'=>$petperfil,'endereco'=>$endereco, 'petCount'=>$petcount]);
     }
 }

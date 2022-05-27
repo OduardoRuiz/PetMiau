@@ -181,3 +181,18 @@ body{
     color: #f39a76;
     
 }
+.paginacao{ 
+
+    text-align: center;
+    margin-right: 3.5rem;
+}
+
+.semPet{ 
+
+    text-align: center;
+    
+}
+.semPet img{ 
+    width: 15rem;
+    height: 15rem; 
+}

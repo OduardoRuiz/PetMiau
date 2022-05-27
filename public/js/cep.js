@@ -1,3 +1,12 @@
+function diacalendario(){ 
+    $('#sandbox-container input').datepicker({
+        autoclose: true,
+        startDate: new Date(),
+        endDate: new Date(new Date().setDate(new Date().getDate() + 5))
+    });
+}
+
+
 function meu_callback(conteudo) {
     if (!("erro" in conteudo)) {
         //Atualiza os campos com os valores.
