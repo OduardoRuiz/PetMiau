@@ -16,7 +16,7 @@
 
         <div class=" row d-flex justify-content-center">
 
-            @foreach ($pets as $pet)
+            @foreach ($pets as $pet)          
                 <!-- Modal do  QR CODE -->
                 <div class="modal fade" {{ 'id=exampleModalCenter' . $pet->id . '' }} tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
