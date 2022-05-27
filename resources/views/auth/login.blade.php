@@ -5,7 +5,7 @@
 
             </a>
         </x-slot>
-
+        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/bemvindodevolta.png" alt="logo do pet miau com a frase bem vindo novamente" class="imagemLogin">
         <!-- Session Status -->
         <x-auth-session-status class="mb-4" :status="session('status')" />
 

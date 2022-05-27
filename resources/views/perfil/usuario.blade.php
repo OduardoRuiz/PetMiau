@@ -31,8 +31,8 @@
 
 
         @if (!$endereco)
-            <div >
-                <a href="{{ route('endereco.create') }}" class="btn btn-sm btn-primary">Criar endereco</a>
+            <div class="CriarEndereco">
+                <a href="{{ route('endereco.create') }}" class="btn btn-sm btn-primary ">Criar endereco</a>
             </div>
         @else
             <div class="minhaConta">

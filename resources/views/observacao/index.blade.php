@@ -13,8 +13,8 @@
     @endif
 
 
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-        Novo Comentario
+    <button type="button" class="btn btn-primary mt-2 ml-2" data-toggle="modal" data-target="#exampleModalCenter">
+        Nova anotação
     </button>
 
     <!-- Modal -->
@@ -23,7 +23,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Escreva uma anotação </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -34,7 +34,7 @@
                         @csrf
 
                         <div class="row">
-                            <span class="form-label">Obs</span>
+                            <span class="form-label"></span>
                             <textarea class="form-control" name="texto"></textarea>
 
 
@@ -57,12 +57,12 @@
 
 
 
-    <h1>Observações</h1>
+    <h1 class="ml-2">Anotações</h1>
 
 
 
     <div class="row">
-        <table class="table table-striped">
+        <table class="table table-striped ml-4">
             <thead>
                 <tr>
                     <th>Texto</th>

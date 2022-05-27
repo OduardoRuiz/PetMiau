@@ -17,7 +17,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Adcione uma vacina</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -27,14 +27,14 @@
                         @csrf
 
                         <div class="row">
-                            <span class="form-label">Tipo</span>
+                            <span class="form-label">Nome da vacina</span>
                             <select class="form-select" name="vacina_id" required>
                                 @foreach($nomes as $nome)
                                 <option value="{{$nome->id}}">{{$nome->nome}}</option>
                                 @endforeach
                             </select>
 
-                            <span>Data</span>
+                            <span>Data da aplicação</span>
                             <input type="date" name="data" id="">
 
                         </div>

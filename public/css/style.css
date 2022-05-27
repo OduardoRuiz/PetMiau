@@ -19,6 +19,18 @@ body{
     margin-left: 0.3rem;
 }
 
+.imagemLogin {
+    max-width:15rem;
+    max-height: 15rem;
+    margin: auto;
+}
+
+.imagemRegistro {
+    margin: auto;
+    width: 13rem;
+    height: 13rem;
+}
+
 /* Menu */
 
 .navbar {
@@ -32,23 +44,33 @@ body{
 .cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .minhaConta, .editNoticia{
     text-align: center;
 }
+.cadastrarPet{
+    font-size: 2rem;
+}
 
-.botaoCadastrar,   .botaoRegistrar, .botaoEntrar {
+.botaoCadastrar,   .botaoRegistrar, .botaoEntrar, .botaoEditEndereco{
     background-color: #565F99;
     color: rgb(247, 247, 237);
 }
 
-.campoDigitar, .botaoCadastrar {
+.campoDigitar, .botaoCadastrar, .botaoEditEndereco {
     margin: auto;
     width: 30rem;
 }
-.form-control, .botaoCadastrar {
+.form-control, .botaoCadastrar, .botaoEditEndereco {
     border-radius: 10px;
 }
 
 .campoEspecial {
     display: inline;
     width: 0.5rem;
+}
+
+.editEndereco {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 /*Minha conta*/
@@ -59,9 +81,15 @@ body{
 .minhaContaPrincipal {
     text-align: center;
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 .enderecoConta {
     font-weight: bold;
+}
+
+.CriarEndereco {
+   text-align: center;
+   margin-top: 1rem;
 }
 /* Meus Pets */
 
@@ -90,7 +118,7 @@ body{
     background-color: #eaf6fb;
     text-align: center;
     margin-top: 15px;
-
+    width: 18rem;
 
 }
 
@@ -100,8 +128,8 @@ body{
 }
 
 .imgpet{
-    width: 200px;
-    height: 200px;
+    width: 13rem ;
+    height: 13rem;
     border: 0.05rem solid #709CB2;
     border-radius: 15px;
     margin-top: 8px;
@@ -114,4 +142,37 @@ body{
 .modal-body{
     text-align: center;
 
+}
+
+/* QrCode */
+
+.telaQrCode {
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+/* carrosel de imagens */
+.carousel-inner div {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.carousel-inner img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius : 0.2em;
+
+}
+.carousel-indicators li{
+    background-color: rgb(10, 10, 248);
+    width: 2em;
+    height: 0.3em;
+}
+
+.imagemHome{
+    width: 30rem;
+    height: 30rem;
 }

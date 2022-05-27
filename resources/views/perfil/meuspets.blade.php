@@ -33,7 +33,7 @@
                                     $url = 'http://127.0.0.1:8000/geral/';
                                     $url1 = 'http://68.183.115.206/geral/';
                                     $petid = $pet->id;
-                                    
+
                                 @endphp
 
                                 <script>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 quadroPet">
+                <div class=" quadroPet">
 
                     <div>
                         <img src="{{ $pet->imagem }}" class="imgpet" alt="imagem pet">

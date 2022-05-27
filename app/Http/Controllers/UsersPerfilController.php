@@ -17,10 +17,10 @@ class UsersPerfilController extends Controller
     public function usuario()
     {
 
-        
+
         $pefilusuario=User::where('id', Auth()->user()->id)->first();
         $pefilendereco=Endereco::where('user_id', Auth()->user()->id)->first();
-        
+
         return view('perfil.usuario')->with(['user'=>$pefilusuario,'endereco'=>$pefilendereco]);
     }
     public function geral($id)
@@ -30,8 +30,8 @@ class UsersPerfilController extends Controller
         $pefilusuario=User::where('id',   $idusuario)->first();
         $pefilendereco=Endereco::where('user_id',  $idusuario)->first();
         $pefilpet=Pet::where('id',$id )->first();
-        
-        
+
+
 
         return view('perfil.geral')->with(['user'=>$pefilusuario,'endereco'=>$pefilendereco,'pet'=>$pefilpet]);
     }

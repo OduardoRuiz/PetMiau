@@ -5,14 +5,15 @@
 
             </a>
         </x-slot>
+        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/Junteanos.png" alt="logo da PetMiau com a frase junte-se a nós! cadastre-se agora" class="imagemRegistro">
 
         <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
+        <x-auth-validation-errors class="" :errors="$errors" />
 
         <form method="POST" action="{{ route('register') }}">
             @csrf
-        <h1 class="criarConta">Criar conta</h1>
-        <h2 class="completeCampo">Complete os campos com suas informações</h2>
+        <!-- <h1 class="criarConta">Criar conta</h1>
+       <h2 class="completeCampo">Complete os campos com suas informações</h2>-->
             <!-- Name -->
             <div>
                 <x-label for="name" :value="__('Nome Completo')" />
@@ -21,14 +22,14 @@
             </div>
 
             <!-- Email Address -->
-            <div class="mt-4">
+            <div class="mt-1">
                 <x-label for="email" :value="__('Email')" />
 
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
+            <div class="mt-1">
                 <x-label for="password" :value="__('Senha')" />
 
                 <x-input id="password" class="block mt-1 w-full"
@@ -38,7 +39,7 @@
             </div>
 
             <!-- Confirm Password -->
-            <div class="mt-4">
+            <div class="mt-1">
                 <x-label for="password_confirmation" :value="__('Confirme sua senha')" />
 
                 <x-input id="password_confirmation" class="block mt-1 w-full"

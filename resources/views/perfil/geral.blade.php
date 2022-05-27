@@ -21,10 +21,10 @@
 
 <body>
 
-    <main class="m-5">
-        <h1>QrCode Cadastro</h1>
+    <main class="m-5 telaQrCode">
+        <h1>Informações </h1>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card telaQrCode" style="width: 18rem;">
             <img src="{{ asset($pet->imagem )}}" class="card-img-top" alt="Imagem Pet">
             <div class="card-body">
 
