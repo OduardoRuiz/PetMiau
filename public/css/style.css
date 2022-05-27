@@ -128,8 +128,8 @@ body{
 }
 
 .imgpet{
-    width: 13rem ;
-    height: 13rem;
+    width: 10rem ;
+    height: 10rem;
     border: 0.05rem solid #709CB2;
     border-radius: 15px;
     margin-top: 8px;
@@ -175,4 +175,9 @@ body{
 .imagemHome{
     width: 30rem;
     height: 30rem;
+}
+
+.registreLogin:hover{ 
+    color: #f39a76;
+    
 }

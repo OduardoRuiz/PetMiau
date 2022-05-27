@@ -14,7 +14,9 @@
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
-        <h1 class="cadastro">Já tem um cadastro? Faça seu Login</h1>
+        <h1 class="cadastro">Não tem cadastro? 
+            <a class="registreLogin" href="{{ route('register') }}">Registre-se</a>
+        </h1>
             <!-- Email Address -->
             <div>
                 <x-label for="email" :value="__('Email')" />
