@@ -12,6 +12,7 @@
 
     <button type="submit">salvar</button>
     </form>
-    
+    @include('layouts.footer')
+ 
 </body>
 </html>

@@ -88,9 +88,10 @@ class VacinasController extends Controller
         $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
         $nomevacinas = Vacina::all();
         $id1=$id;
+        $nomepet = DB::table('pets')->where('id', '=', $id)->value('nome');
 
 
-        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1]);
+        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1, 'nomepet'=> $nomepet]);
      
     }
     public function carregar($id){
@@ -98,8 +99,10 @@ class VacinasController extends Controller
         $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
         $nomevacinas = Vacina::all();
         $id1=$id;
+        $nomepet = DB::table('pets')->where('id', '=', $id)->value('nome');
 
-        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1]);
+
+        return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1, 'nomepet'=> $nomepet]);
      
     }
 

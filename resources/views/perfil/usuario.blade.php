@@ -65,3 +65,4 @@
         @endif
 
     </main>
+    @include('layouts.footer')

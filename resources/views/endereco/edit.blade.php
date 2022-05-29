@@ -51,7 +51,7 @@
 
         <div class="form-group campoDigitar">
             <span class="form-label">Contato</span>
-            <input type="text" name="contato" class="form-control" required value="{{ $endereco->contato }}">
+            <input type="text" name="contato" onkeypress="soNumero(this.id)" value="{{$endereco->contato}}" class="form-control" id="telefone" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" placeholder="Somente numeros" required="required" maxlength="15">
         </div>
 
 
@@ -65,6 +65,7 @@
     </form>
 
 </main>
+@include('layouts.footer')
 
 </body>
 

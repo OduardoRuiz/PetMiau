@@ -50,6 +50,7 @@
 
         <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Cadastrar Pet</button>
     </form>
+    @include('layouts.footer')
 
 </body>
 

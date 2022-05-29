@@ -136,3 +136,6 @@
 
 
     </main>
+
+    @include('layouts.footer')
+

@@ -8,8 +8,6 @@
             {{ session()->get('sucesso') }}
 
         </div>
-
-
     @endif
 
 
@@ -57,7 +55,7 @@
 
 
 
-    <h1 class="ml-2">Anotações</h1>
+    <h1 class="ml-2">Anotações {{ $nomepet }}</h1>
 
 
 
@@ -66,16 +64,24 @@
             <thead>
                 <tr>
                     <th>Texto</th>
+                    <th>Criado em</th>
+
                 </tr>
             </thead>
             <tbody>
                 @foreach ($observacoes as $observacao1)
                     <tr>
                         <td>{{ $observacao1->texto }}</td>
+                        @php
+                            $originalDate = $observacao1->updated_at;
+                            $newDate = date('d-m-Y', strtotime($originalDate));
+                        @endphp
+                        <td>{{ $newDate }}</td>
                         <td>
 
-                            <div class="modal fade" {{ 'id=exampleModalCenter'.$observacao1->id.'' }} tabindex="-1" role="dialog"
-                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal fade" {{ 'id=exampleModalCenter' . $observacao1->id . '' }}
+                                tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -87,12 +93,14 @@
                                         </div>
                                         <div class="modal-body">
 
-                                            <form action="{{route('observacao.update', $observacao1->id)}}" method="post">
+                                            <form action="{{ route('observacao.update', $observacao1->id) }}"
+                                                method="post">
                                                 @method('PATCH')
                                                 @csrf
                                                 <div class="row">
                                                     <label for="" class="form-label">Texto</label>
-                                                    <input type="text" name="texto" class="form-control" value="{{ $observacao1->texto }}">
+                                                    <input type="text" name="texto" class="form-control"
+                                                        value="{{ $observacao1->texto }}">
                                                 </div>
 
                                         </div>
@@ -119,8 +127,7 @@
                             </form>
 
                             <button type="button" class="btn btn-warning" data-toggle="modal"
-                            {{ 'data-target=#exampleModalCenter'.$observacao1->id.'' }}
-                                >
+                                {{ 'data-target=#exampleModalCenter' . $observacao1->id . '' }}>
                                 Editar
                             </button>
 
@@ -134,6 +141,7 @@
             </tbody>
         </table>
     </div>
+    @include('layouts.footer')
 
 </body>
 

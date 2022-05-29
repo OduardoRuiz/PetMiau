@@ -61,6 +61,7 @@
 
         <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block">Salvar informações</button>
     </form>
+    @include('layouts.footer')
 
 </body>
 

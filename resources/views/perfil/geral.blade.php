@@ -19,7 +19,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body class="telaQrCode">
+    
 
     <main class="m-5 telaQrCode">
         <h1>Informações </h1>
@@ -34,13 +35,14 @@
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Este é meu tutor : <img src="{{  asset($user->imagem )}}" style="width:100px"></li>
-                <li class="list-group-item">O nome dele(a) é: {{ $user->name }}</li>
-                <li class="list-group-item">Meu Bairro : {{ $endereco->bairro }}, minha cidade:{{ $endereco->cidade }}</li>
-                <li class="list-group-item">Contato do meu dono: {{ $endereco->contato }}</li>
+                <li class="list-group-item">O nome dele(a) é : {{ $user->name }}</li>
+                <li class="list-group-item">Meu Bairro : {{ $endereco->bairro }}, minha cidade : {{ $endereco->cidade }}</li>
+                <li class="list-group-item">Contato do meu dono : <div>{{ $endereco->contato }}</div> </li>
                 <li class="list-group-item">Caso eu aparente estar perdido(a), por gentileza entre em contato, tenho certeza que estão sentindo minha falta</li>
             </ul>
         </div>
     </main>
+    @include('layouts.footer')
 
 </body>
 

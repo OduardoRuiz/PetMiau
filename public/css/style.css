@@ -1,26 +1,30 @@
 /* Backgraund de todas as telas*/
 
-body{
+body {
     background-color: #f2fbff;
 }
 
 /*Tela Registrar e Login*/
 
-.criarConta, .completeCampo, .cadastro {
+.criarConta,
+.completeCampo,
+.cadastro {
     text-align: center;
 }
+
 .completeCampo {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.botaoRegistrar, .botaoEntrar {
+.botaoRegistrar,
+.botaoEntrar {
     margin-top: 1rem;
     margin-left: 0.3rem;
 }
 
 .imagemLogin {
-    max-width:15rem;
+    max-width: 15rem;
     max-height: 15rem;
     margin: auto;
 }
@@ -36,28 +40,43 @@ body{
 .navbar {
     border-bottom: solid;
     border-color: rgb(243, 200, 183);
-    background-color:#e7f4fa;
+    background-color: #e7f4fa;
 }
 
 /* cadastrar pet e usuário */
 
-.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .editNoticia{
+.cadastrarPet,
+.completePet,
+.cadastrarTipo,
+.cadastrarVacina,
+.cadastrarUser,
+.completeUser,
+.editNoticia {
     text-align: center;
 }
-.cadastrarPet{
+
+.cadastrarPet {
     font-size: 2rem;
 }
 
-.botaoCadastrar,   .botaoRegistrar, .botaoEntrar, .botaoEditEndereco{
+.botaoCadastrar,
+.botaoRegistrar,
+.botaoEntrar,
+.botaoEditEndereco {
     background-color: #565F99;
     color: rgb(247, 247, 237);
 }
 
-.campoDigitar, .botaoCadastrar, .botaoEditEndereco {
+.campoDigitar,
+.botaoCadastrar,
+.botaoEditEndereco {
     margin: auto;
     width: 30rem;
 }
-.form-control, .botaoCadastrar, .botaoEditEndereco {
+
+.form-control,
+.botaoCadastrar,
+.botaoEditEndereco {
     border-radius: 10px;
 }
 
@@ -78,27 +97,32 @@ body{
 .minhaConta {
     text-align: center;
 }
-.minhaConta img{ 
+
+.minhaConta img {
 
     border: 0.05rem solid #709CB2;
     border-radius: 15px;
 }
-.minhaConta span{ 
 
-   font-size: 2rem;
-   
+.minhaConta span {
+
+    font-size: 2rem;
+
 }
+
 .minhaContaEndereco {
     text-align: left;
     margin-left: 50px;
 
 }
+
 .minhaContaPrincipal {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
-.enderecoDiv{ 
+
+.enderecoDiv {
     text-align: center;
 }
 
@@ -107,12 +131,13 @@ body{
 }
 
 .CriarEndereco {
-   text-align: center;
-   margin-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
 }
+
 /* Meus Pets */
 
-.cssBotao{
+.cssBotao {
     max-width: 65rem;
     width: 100%;
     margin: 2rem auto;
@@ -130,7 +155,7 @@ body{
 
 }
 
-.quadroPet{
+.quadroPet {
     border: 0.1rem solid #709CB2;
     border-radius: 15px;
     margin-right: 2rem;
@@ -141,24 +166,25 @@ body{
 
 }
 
-.logoimg{
+.logoimg {
     width: 75px;
     height: 75px;
 }
 
-.imgpet{
-    width: 10rem ;
+.imgpet {
+    width: 10rem;
     height: 10rem;
     border: 0.05rem solid #709CB2;
     border-radius: 15px;
     margin-top: 8px;
 }
 
-.cssquadro{
+.cssquadro {
     margin: 0;
 
 }
-.modal-body{
+
+.modal-body {
     text-align: center;
 
 }
@@ -168,6 +194,8 @@ body{
 .telaQrCode {
     text-align: center;
     margin: auto;
+    background-color: #f2fbff;
+
 }
 
 
@@ -179,55 +207,60 @@ body{
     padding-right: 10%;
 
 }
+
 .carousel-inner img {
     max-width: 100%;
     max-height: 100%;
-    border-radius : 0.2em;
+    border-radius: 0.2em;
 
 }
-.carousel-indicators li{
+
+.carousel-indicators li {
     background-color: rgb(10, 10, 248);
     width: 2em;
     height: 0.3em;
 }
 
-.imagemHome{
+.imagemHome {
     width: 30rem;
     height: 30rem;
 }
 
-.registreLogin:hover{ 
+.registreLogin:hover {
     color: #f39a76;
-    
+
 }
-.paginacao{ 
+
+.paginacao {
 
     text-align: center;
     margin-right: 3.5rem;
 }
 
-.semPet{ 
+.semPet {
 
     text-align: center;
-    
+
 }
-.semPet img{ 
+
+.semPet img {
     width: 15rem;
-    height: 15rem; 
+    height: 15rem;
 }
 
 
-  
-  .hoverDoMenu li {
+
+
+.hoverDoMenu li {
     float: left;
     display: inline-block;
     padding: 10px;
     position: relative
-  }
-  
+}
 
-  
-  .hoverDoMenu a:after {
+
+
+.hoverDoMenu a:after {
     content: '';
     position: absolute;
     width: 0;
@@ -237,14 +270,35 @@ body{
     right: 0;
     background: #F3C8B7;
     transition: width .4s ease;
-  }
-  
-  .hoverDoMenu a:hover:after {
+}
+
+.hoverDoMenu a:hover:after {
     width: 100%;
     left: 0;
     background: #F3C8B7;
-  }
-  .menuCanto{
-      text-align: left;
-      display: flex;
-  }
+}
+
+.menuCanto {
+    text-align: left;
+    display: flex;
+}
+
+.footer {
+}
+
+.divFooter {
+    background-color: #E7F4FA;
+
+    text-align: center;
+    width: 100%;
+    border-top: 0.15rem solid rgb(243, 200, 183);
+    margin-bottom: 5px;
+
+}
+
+.divFooter span {
+    margin-top: 8px;
+    text-align: center;
+    font-style: italic;
+    font-size: 0.7rem;
+}

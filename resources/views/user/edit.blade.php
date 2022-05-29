@@ -25,6 +25,7 @@
 
             <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">salvar</button>
         </form>
+        @include('layouts.footer')
 
     </body>
 

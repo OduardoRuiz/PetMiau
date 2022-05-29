@@ -53,6 +53,7 @@
 
             </tbody>
         </table>
+        @include('layouts.footer')
 
 </body>
 

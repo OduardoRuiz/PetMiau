@@ -54,6 +54,7 @@
    <p></p>
 
     </main>
+    @include('layouts.footer')
 
 </body>
 </html>

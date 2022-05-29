@@ -12,7 +12,9 @@ class ObservacoesController extends Controller
     public function index(Request $request,$pet_id)
     {
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $pet_id)->get();
-        return view('observacao.index')->with(['observacoes'=>$obs,'pet_id'=>$pet_id]);
+        $nomepet = DB::table('pets')->where('id', '=', $pet_id)->value('nome');
+
+        return view('observacao.index')->with(['observacoes'=>$obs,'pet_id'=>$pet_id, 'nomepet'=>$nomepet]);
     }
 
     public function create(Request $request, $pet_id)
@@ -20,7 +22,10 @@ class ObservacoesController extends Controller
         
         $id=$pet_id;
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $pet_id)->get();
-        return view('observacao.index')->with(['pet_id'=>$id,'observacoes'=>$obs]);
+        $nomepet = DB::table('pets')->where('id', '=', $pet_id)->value('nome');
+
+        return view('observacao.index')->with(['pet_id'=>$id,'observacoes'=>$obs, 'nomepet'=>$nomepet]);
+        
     }
 
     public function store(Request $request,$id )
@@ -41,15 +46,14 @@ class ObservacoesController extends Controller
     public function carregar($id){
 
         $obs= DB::table('obsevacoes')->where('pet_id', '=', $id)->get();
+        $nomepet = DB::table('pets')->where('id', '=', $id)->value('nome');
        
-
-        return view('observacao.index')->with(['pet_id'=>$id,'observacoes'=>$obs]);
+        return view('observacao.index')->with(['pet_id'=>$id,'observacoes'=>$obs, 'nomepet'=>$nomepet]);
      
     }
 
     public function edit(Observacao $observacao, )
     {
-        
         
         return view('observacao.index')->with(['observacao'=>$observacao]);
     }

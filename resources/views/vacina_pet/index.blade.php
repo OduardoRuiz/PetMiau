@@ -5,7 +5,7 @@
 
 
 
-    <h1 class="ml-1">Vacinas do pet </h1>
+    <h1 class="ml-1">Carteirinha De Vacinação: {{$nomepet}} </h1>
 
     <button type="button" class="btn btn-primary mb-2 ml-1" data-toggle="modal" data-target="#exampleModalCenter2">
         Adicionar Vacina
@@ -77,7 +77,11 @@
                         </td>
 
 
-                        <td>{{ $vacina->data }}</td>
+                        @php
+                        $originalDate = $vacina->data;
+                        $newDate = date("d-m-Y", strtotime($originalDate));    
+                        @endphp
+                        <td>{{ $newDate }}</td>
 
 
 
@@ -96,6 +100,7 @@
 
             </tbody>
         </table>
+        @include('layouts.footer')
 
 </body>
 
