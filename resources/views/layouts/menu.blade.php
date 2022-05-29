@@ -49,7 +49,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
 
-                <ul class="navbar-nav">
+                <ul class="navbar-nav hoverDoMenu">
                     <li class="nav-item">
                         <a class="nav-link menuAdm" href="{{ route('home') }}">Home</a>
                     </li>
@@ -105,33 +105,33 @@
 
                     
                         @if (Auth::user() == null)
-                            <li>
+                            <li class="nav-item">
                                 <a class="nav-link menuAdm" href="{{ route('login') }}">Login</a>
                             </li>
                         @else
-                            <li>
-                                <div class="nav-link d-flex  menuAdm">{{ Auth::user()->name }}</div>
+                            <li class="nav-item">
+                                <b class="nav-link d-flex  menuAdm">Olá, {{ Auth::user()->name }}</b>
                             </li>
                         @endif
 
 
                         @if (Auth::user() == null)
-                            <li >
+                            <li class="nav-item" >
                                 <a class="nav-link menuAdm" href="{{ route('register') }}">Registrar</a>
                             </li>
                         @else
-                            <li>
+                            <li class="nav-item">
                                 <div class="">
 
-                                    <form method="POST" action="{{ route('logout') }}">
+                                    <form  method="POST" action="{{ route('logout') }}">
                                         @csrf
 
 
-                                        <x-responsive-nav-link :href="route('logout')" class=" navbar-nav d-flex  "
-                                            style="text-decoration: underline;" onclick="event.preventDefault();
+                                        <a :href="route('logout')" class=" btnSair nav-link menuAdm"
+                                            style="color:blue" onclick="event.preventDefault();
                                             this.closest('form').submit();">
                                             {{ __('Sair') }}
-                                        </x-responsive-nav-link>
+                                    </a>
                                     </form>
 
                                 </div>

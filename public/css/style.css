@@ -41,7 +41,7 @@ body{
 
 /* cadastrar pet e usuário */
 
-.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .minhaConta, .editNoticia{
+.cadastrarPet, .completePet, .cadastrarTipo, .cadastrarVacina, .cadastrarUser, .completeUser, .editNoticia{
     text-align: center;
 }
 .cadastrarPet{
@@ -78,11 +78,30 @@ body{
 .minhaConta {
     text-align: center;
 }
+.minhaConta img{ 
+
+    border: 0.05rem solid #709CB2;
+    border-radius: 15px;
+}
+.minhaConta span{ 
+
+   font-size: 2rem;
+   
+}
+.minhaContaEndereco {
+    text-align: left;
+    margin-left: 50px;
+
+}
 .minhaContaPrincipal {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
 }
+.enderecoDiv{ 
+    text-align: center;
+}
+
 .enderecoConta {
     font-weight: bold;
 }
@@ -196,3 +215,36 @@ body{
     width: 15rem;
     height: 15rem; 
 }
+
+
+  
+  .hoverDoMenu li {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    position: relative
+  }
+  
+
+  
+  .hoverDoMenu a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #F3C8B7;
+    transition: width .4s ease;
+  }
+  
+  .hoverDoMenu a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #F3C8B7;
+  }
+  .menuCanto{
+      text-align: left;
+      display: flex;
+  }
