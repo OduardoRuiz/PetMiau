@@ -283,8 +283,7 @@ body {
     display: flex;
 }
 
-.footer {
-}
+
 
 .divFooter {
     background-color: #E7F4FA;
@@ -293,6 +292,12 @@ body {
     width: 100%;
     border-top: 0.15rem solid rgb(243, 200, 183);
     margin-bottom: 5px;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    
 
 }
 
