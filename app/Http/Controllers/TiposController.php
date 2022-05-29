@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Tipo;
+use App\Models\Pet;
 
 use Illuminate\Http\Request;
 
@@ -43,10 +44,21 @@ class TiposController extends Controller
     }
     public function destroy(Tipo $tipo,$id)
     {
+        if(Pet::where('tipo_id', $id)->count()==0){
+
+            Tipo::where('id', $id)->delete();
+            session()->flash('sucesso','Tipo apagado com sucesso');
+            return redirect(route('tipo.index'));
+
+            
+
+        }else {
+            session()->flash('sucesso','Tipo não pode ser apagado ');
+            return redirect(route('tipo.index'));
+        }
     
-     Tipo::where('id', $id)->delete();
-     session()->flash('sucesso','Usuario apagado com sucesso');
-     return redirect(route('user.index'));
+    
+     
      
     }
 }

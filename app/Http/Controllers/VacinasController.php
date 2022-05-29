@@ -47,10 +47,21 @@ class VacinasController extends Controller
     }
     public function destroy(Vacina $vacina,$id)
     {
+
+        if(PetVacina::where('vacina_id', $id)->count()==0){
+
+            Vacina::where('id', $id)->delete();
+            session()->flash('sucesso','vacina apagada com sucesso');
+            return redirect(route('vacina.index'));
+
+            
+
+        }else {
+            session()->flash('sucesso','vacina não pode ser apagagada');
+            return redirect(route('vacina.index'));
+        }
     
-    Vacina::where('id', $id)->delete();
-     session()->flash('sucesso','vacina apagada com sucesso');
-     return redirect(route('vacina.index'));
+   
      
     }
 
@@ -94,6 +105,7 @@ class VacinasController extends Controller
 
     public function apagar($id)
     {
+
     $pet= DB::table('pet_vacina')->where('updated_at', '=', $id)->value('pet_id');
     $vacinas= DB::table('pet_vacina')->where('updated_at', '=', $id)->delete();
     
