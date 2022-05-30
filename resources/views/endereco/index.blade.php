@@ -9,14 +9,14 @@
 
     </div>
  @endif
-    <h1>Lista de endereços</h1>
+    <h1 class="titleAdmin">Lista de endereços</h1>
 
-    <div class="row">
-        <table class="table table-striped ml-3">
+    <div class="m-4 row">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Rua</th>
+                    <th>Logradouro</th>
                     <th>Número</th>
                     <th>Complemento</th>
                     <th>Bairro</th>
@@ -24,7 +24,7 @@
                     <th>UF</th>
                     <th>CEP</th>
                     <th>Contato</th>
-                    <th>Opção</th>
+                   
 
                 </tr>
             </thead>

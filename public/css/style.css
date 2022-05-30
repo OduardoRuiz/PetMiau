@@ -295,9 +295,7 @@ body {
     bottom: 0;
     left: 0;
     height: 40px;
-    position: fixed;
-    width: 100%;
-    
+    position:fixed;
 
 }
 
@@ -306,4 +304,30 @@ body {
     text-align: center;
     font-style: italic;
     font-size: 0.7rem;
+}
+
+.content {
+    min-height: calc(100vh - 70px);
+  }
+  
+  .mainNoticias{ 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .sectionNoticias{ 
+      height: 100%;
+  }
+  .imgCardNoticias {
+    max-width: 100%;
+    max-height: 70%;
+}
+.titleAdmin{ 
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
 }

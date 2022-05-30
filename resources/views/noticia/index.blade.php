@@ -10,10 +10,11 @@
     </div>
  @endif
 
-    <h1>Criação de notícias <a href="{{ route('noticia.create') }}" class="btn btn-md btn-primary ml-3">Criar noticia</a></h1>
+    <h1 class="titleAdmin">Criação de notícias</h1>
+        <div><a href="{{ route('noticia.create') }}" class="btn btn-md btn-primary ml-3">Criar noticia</a></div> 
 
-    <div class="row">
-        <table class="table table-striped ml-3">
+    <div class="m-3 row">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>

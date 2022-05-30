@@ -10,10 +10,10 @@
     </div>
  @endif
 
-    <h1>Apagar usuários</h1>
+    <h1 class="titleAdmin">Apagar usuários</h1>
 
-    <div class="row">
-        <table class="table table-striped ml-3">
+    <div class="row m-3">
+        <table class="table table-striped ">
             <thead>
                 <tr>
                     <th>ID</th>

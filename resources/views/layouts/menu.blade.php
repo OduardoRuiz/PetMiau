@@ -93,8 +93,7 @@
                     @endif
 
                     <li class="nav-item">
-                        <a class="nav-link menuAdm" href="{{ route('noticia.noticias') }}">Noticias e
-                            Curiosidades</a>
+                        <a class="nav-link menuAdm" href="{{ route('noticia.noticias') }}">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link menuAdm" href="{{ route('noticia.sobre') }}">Sobre nós </a>

@@ -12,9 +12,9 @@
 
 
 
-    <h1>Lista dos pets forge</h1>
+    <h1 class="titleAdmin">Lista dos pets</h1>
 
-        <table class="table table-striped">
+        <table class=" m-3 table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>

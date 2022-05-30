@@ -1,18 +1,21 @@
 @include('layouts.header')
+
 <body>
     @include('layouts.menu')
 
-    <h1>criar noticia</h1>
-    <h1>Pagina do Admin</h1>
+    <h1 class="titleAdmin">Crie uma noticia</h1>
 
-    <form action="{{route('noticia.store')}}" method="post">
-    @csrf
-    <span>noticia</span>
-    <textarea class="form-control" name="noticia"></textarea>
+    <div class="m-3">
 
-    <button type="submit">salvar</button>
-    </form>
+        <form action="{{ route('noticia.store') }}" method="post">
+            @csrf
+            <textarea class="form-control" name="noticia"></textarea>
+
+            <button class="btn btn-primary mt-3" type="submit">salvar</button>
+        </form>
+    </div>
     @include('layouts.footer')
- 
+
 </body>
+
 </html>
