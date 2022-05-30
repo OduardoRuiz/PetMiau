@@ -160,7 +160,7 @@
             <div class="">
                 <div class="text-center col ">
                     <img src="http://optclean.com.br/wp-content/uploads/2016/11/capa-para-facebook64.jpg"
-                        class="">
+                        class="img-fluid">
                 </div>  
 
             </div>
@@ -168,7 +168,6 @@
 
 
         </section>
-        http://optclean.com.br/wp-content/uploads/2016/11/capa-para-facebook64.jpg
 
         <!---->
 
