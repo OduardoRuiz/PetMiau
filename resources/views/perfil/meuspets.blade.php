@@ -55,7 +55,7 @@
 
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" onclick="download(imgparametro)"
+                                    <button type="submit" onclick="download('<?php echo $petid; ?>')"
                                         class="btn btn-primary">Salvar</button>
                                     <a class="btn btn-outline-info" href={{ 'geral/' . $pet->id }}
                                         target="_blank">Abrir</a>
