@@ -83,7 +83,7 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Coleiras</h2>
-                            <p class="h6 ">Conheça nossas coleiras com QrCode Personalizado com as informações do seu pet
+                            <p class="h6 ">Conheça nossas coleiras com QrCode Personalizado com as informações do seu pet.
                             </p>
 
                         </div>
@@ -94,7 +94,7 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Encontre os facilmente</h2>
-                            <p class="h6 ">Em caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações facilmente
+                            <p class="h6 ">Em caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações.
                             </p>
 
                         </div>
@@ -107,7 +107,7 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Informações</h2>
-                            <p class="h6 ">Ao cadastrar suas informações na sessão "meu perfil", é automaticamente carregada no QrCode de seus pets
+                            <p class="h6 ">Ao cadastrar suas informações na sessão "meu perfil", é automaticamente carregada no QrCode de seus pets.
                             </p>
 
                         </div>
@@ -119,8 +119,8 @@
                         <img src="https://storage.googleapis.com/petmiau-imagens/front-end/cachorropraia.png"
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2">
-                            <h2 class="h5 ">Carteirinha de vacina</h2>
-                            <p class="h6 ">Mantenha as informações de vacinação do seu pet sempre atualizada a seguras, sem risco de perca
+                            <h2 class="h5 ">Carteirinha de vacinação</h2>
+                            <p class="h6 ">Mantenha as informações de vacinação do seu pet sempre atualizada e seguras, sem risco de perda.
                             </p>
 
                         </div>
