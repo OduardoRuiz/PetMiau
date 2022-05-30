@@ -337,3 +337,11 @@ body {
     justify-content: center;
     
 }
+.botaoCarrosel:hover{
+    
+    box-shadow: #34495e;
+    color: #565F99;
+    
+
+}
+

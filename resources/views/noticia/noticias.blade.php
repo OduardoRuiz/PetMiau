@@ -19,26 +19,26 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class=" w-100"
-                            src="https://i.pinimg.com/originals/19/9d/da/199dda88fbca22eae7b3c5f3c022e16b.jpg"
+                            src="https://storage.googleapis.com/petmiau-imagens/front-end/blogAdotepets1.png"
                             alt="First slide">
                     </div>
                     <div class="carousel-item">
                         <img class=" w-100"
-                            src="https://i.pinimg.com/originals/19/9d/da/199dda88fbca22eae7b3c5f3c022e16b.jpg"
+                            src="https://storage.googleapis.com/petmiau-imagens/front-end/blogMundialpets.png"
                             alt="Second slide">
                     </div>
                     <div class="carousel-item">
                         <img class=" w-100"
-                            src="https://i.pinimg.com/originals/19/9d/da/199dda88fbca22eae7b3c5f3c022e16b.jpg"
+                            src="https://storage.googleapis.com/petmiau-imagens/front-end/curiosidadeBlog.png"
                             alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-danger" aria-hidden="true"></span>
+                    <span  class="carousel-control-prev-icon " aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-danger" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -52,35 +52,22 @@
 
             <div class="row mt-5  mx-1">
                 <div class="col-11 col-md-6 col-lg-3 text-center ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogBulldog.jpg"
                         class="img-fluid imgCardNoticias ">
                     <div class="mt-2 ">
-                        <h2 class="h5 ">Gatos</h2>
-                        <p class="h6 ">Nomes para gatos: opções ideais para chamar o seu bichano
+                        <h2 class="h5 ">Patrulha</h2>
+                        <p class="h6 ">Descubra qual é a raça dos cachorros da Patrulha Canina!
                         </p>
 
                     </div>
 
                 </div>
                 <div class="col-11 col-md-6 col-lg-3 text-center ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogCatoecachorro.jpg"
                         class="img-fluid imgCardNoticias ">
                     <div class="mt-2 ">
-                        <h2 class="h5 ">Gatos</h2>
-                        <p class="h6 ">Nomes para gatos: opções ideais para chamar o seu bichano
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="col-11 col-md-6 col-lg-3 text-center ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
-                        class="img-fluid imgCardNoticias ">
-                    <div class="mt-2 ">
-                        <h2 class="h5 ">Gatos</h2>
-                        <p class="h6 ">Nomes para gatos: opções ideais para chamar o seu bichano
+                        <h2 class="h5 ">Cachorro e gato</h2>
+                        <p class="h6 ">10 dicas para facilitar a convivência dos seus amados pets
                         </p>
 
                     </div>
@@ -89,11 +76,26 @@
 
 
                 <div class="col-11 col-md-6 col-lg-3 text-center ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogFilhote.jpg"
+                        class="img-fluid imgCardNoticias ">
+                    <div class="mt-2 ">
+                        <h2 class="h5 ">Filhotes</h2>
+                        <p class="h6 ">Saiba até quando um gato é filhote e reconheça os sinais
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-11 col-md-6 col-lg-3 text-center ">
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogGatoGrande.jpg"
                         class="img-fluid imgCardNoticias ">
                     <div class="mt-2">
-                        <h2 class="h5 ">Gatos</h2>
-                        <p class="h6 ">Nomes para gatos: opções ideais para chamar o seu bichano
+                        <h2 class="h5 ">Obesidade felina</h2>
+                        <p class="h6 ">Saiba como evitar e tratar o problema, para que seu gato fique com
+                            saúde
                         </p>
 
                     </div>
@@ -105,51 +107,60 @@
 
         </section>
 
-        <section class=" container text-dark mt-4 mb-5 d-flex row ">
+        <section class=" container text-dark mt-4 mb-5 mb-sm-3 mt-sm-0  d-flex row ">
 
-            <h2 class="h3 mt-4 text-center  ">Ultimas do Petmiau</h2>
+            <h2 class="h3 mt-4 mt-sm-4 mb-sm-4 text-center">Últimas do Petmiau</h2>
 
-            <div class="row mt-5  mx-1">
-                <div class="text-center col ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+            <div class="row mt-1  mx-1">
+                <div class="text-center col-11 col-md-6 col-lg-6 mb-sm-0 ">
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogMeninaCachorro.jpg"
                         class="img-fluid imgCardNoticias ">
                 </div>
-                <div class="mt-2 col text-left ">
-                    <h2 class="h5 ">Titulo</h2>
-                    <p class="h6 ">Nome materia
+                <div class="mt-2 col mt-sm-0 text-left ">
+                    <h2 class="h5 ">Cachorro para criança? Veja por que essa é uma ótima ideia
+                    </h2>
+                    <p class="h6 ">Este artigo busca ajudar a resolver esta questão. Afinal, será que essa
+                        relação pode ser benéfica para crianças e cachorros? É isso que vamos descobrir agora! Continue
+                        a leitura e tire suas próprias conclusões.
                     </p>
 
                 </div>
-               
+
 
             </div>
-            <div class="row mt-5  mx-1">
-                <div class="text-center col ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+            <div class="row mt-1  mx-1">
+                <div class="text-center col-11 col-md-6 col-lg-6 ">
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/BlogGato.jpg"
                         class="img-fluid imgCardNoticias ">
                 </div>
-                <div class="mt-2 col text-left ">
-                    <h2 class="h5 ">Titulo</h2>
-                    <p class="h6 ">Nome materia
+                <div class="mt-2 mt-sm-0 col text-left ">
+                    <h2 class="h5 ">Como cuidar de gatos filhotes: 7 dicas para uma adaptação tranquila
+                    </h2>
+                    <p class="h6 ">Seja por uma gravidez inesperada ou por uma adoção, um pet bebê precisa de
+                        cuidados especiais, e nós precisamos estar preparados. Se você está se perguntando como cuidar
+                        de um gato filhote, está no lugar certo! Continue lendo e aprenda 7 dicas para uma adaptação
+                        tranquila.
                     </p>
 
                 </div>
-               
+
 
             </div>
 
-            <div class="row mt-5  mx-1">
-                <div class="text-center col ">
-                    <img src="https://cdn.pixabay.com/photo/2019/04/06/15/58/cat-4107662_960_720.jpg"
+            <div class="row mt-1  mx-1">
+                <div class="text-center col-11 col-md-6 col-lg-6  ">
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/BlogPugViagem.jpg"
                         class="img-fluid imgCardNoticias ">
                 </div>
-                <div class="mt-2 col text-left ">
-                    <h2 class="h5 ">Titulo</h2>
-                    <p class="h6 ">Nome materia
+                <div class="mt-2 col mt-sm-0 text-left ">
+                    <h2 class="h5 ">10 dicas para viajar de carro com cachorros com segurança</h2>
+                    <p class="h6 ">Você quer planejar uma viagem de carro e levar junto seu cachorrinho nesse
+                        passeio? Saiba que é importante estar atenta a uma série de dicas para viajar de carro com
+                        cachorros com segurança tanto para o motorista quanto para seu melhor amigo.
                     </p>
 
                 </div>
-               
+
 
             </div>
 
@@ -159,12 +170,12 @@
         <section class="">
             <div class="">
                 <div class="text-center col ">
-                    <img src="http://optclean.com.br/wp-content/uploads/2016/11/capa-para-facebook64.jpg"
+                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogbanner.png"
                         class="img-fluid">
-                </div>  
+                </div>
 
             </div>
-           
+
 
 
         </section>
