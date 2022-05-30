@@ -20,7 +20,7 @@
                 $hoje = Date('Y-m-d');
             @endphp
             <span class="form-label">Data de Nascimento</span>
-            <input type="date" name="data_nascimento" class="form-control" value="{{ $pet->data_nascimento }} " max={{$hoje}} >
+            <input type="date" name="data_nascimento" class="form-control" value="{{ $pet->data_nascimento }}" max={{$hoje}} >
         </div>
 
 
