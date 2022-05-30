@@ -224,6 +224,7 @@ body {
 .imagemHome {
     width: 30rem;
     height: 30rem;
+    text-align: center;
 }
 
 .registreLogin:hover {
@@ -344,4 +345,18 @@ body {
     
 
 }
-
+.texto {
+    max-width: 80%;
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.mainHome{ 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+  }
+  .divCarrosel{ 
+      text-align: center;
+  }

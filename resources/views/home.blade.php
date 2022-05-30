@@ -28,30 +28,114 @@
         </div>-->
 
 
+        <div class="mainHome mt-4 row">
 
-        <!-- parte referente ao carousel bootstrap -->
-        <div id="pet" class="carousel slide mt-4" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#pet" data-slide-to="0" class="active"></li>
-                <li data-target="#pet" data-slide-to="1"></li>
-                <li data-target="#pet" data-slide-to="2"></li>
+            <section class="">
+                <div id="carouselExampleIndicators" class="carousel slide align-content-center" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active imagemHome">
-                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiauPng.png" alt="">
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="w-100 img-fluid"
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/gifbanner.gif"
+                                alt="Third slide">
+                        </div>
+                        <div class="carousel-item ">
+                            <img class="w-100  img-fluid"
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/perfillink.png"
+                                alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="w-100  img-fluid"
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bloglink.png"
+                                alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="w-100  img-fluid"
+                              src="https://storage.googleapis.com/petmiau-imagens/front-end/cadastrar%20pet%20link.png"
+                              alt="Second slide">
+                      </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <div class="carousel-item imagemHome">
-                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/doisgatos.png" alt="">
+            </section>
+
+            <section class="container text-dark mt-4 mb-5 ">
+
+                <h2 class="h3 mt-4 text-center ">Conheça nossos produtos</h2>
+
+                <div class="row mt-5  mx-1">
+                    <div class="col-11 col-md-6 col-lg-3 text-center ">
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/gatocoleira.png"
+                            class="img-fluid imgCardNoticias ">
+                        <div class="mt-2 ">
+                            <h2 class="h5 ">Coleiras</h2>
+                            <p class="h6 ">Conheça nossas coleiras com QrCode Personalizado com as informações do seu pet
+                            </p>
+
+                        </div>
+
+                    </div>
+                    <div class="col-11 col-md-6 col-lg-3 text-center ">
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/dogcoleira.png"
+                            class="img-fluid imgCardNoticias ">
+                        <div class="mt-2 ">
+                            <h2 class="h5 ">Encontre os facilmente</h2>
+                            <p class="h6 ">Em caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações facilmente
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-11 col-md-6 col-lg-3 text-center ">
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/gatopreto.png"
+                            class="img-fluid imgCardNoticias ">
+                        <div class="mt-2 ">
+                            <h2 class="h5 ">Informações</h2>
+                            <p class="h6 ">Ao cadastrar suas informações na sessão "meu perfil", é automaticamente carregada no QrCode de seus pets
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-11 col-md-6 col-lg-3 text-center ">
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/cachorropraia.png"
+                            class="img-fluid imgCardNoticias ">
+                        <div class="mt-2">
+                            <h2 class="h5 ">Carteirinha de vacina</h2>
+                            <p class="h6 ">Mantenha as informações de vacinação do seu pet sempre atualizada a seguras, sem risco de perca
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="carousel-item imagemHome">
-                    <img src="https://storage.googleapis.com/petmiau-imagens/front-end/gatonovelo.png" alt="">
-                </div>
-            </div>
         </div>
 
     </main>
+
+
+
     @include('layouts.footer')
 
 </body>
+
 </html>
