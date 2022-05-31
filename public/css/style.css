@@ -288,7 +288,7 @@ body {
 
 .divFooter {
     background-color: #E7F4FA;
-
+     
     text-align: center;
     width: 100%;
     border-top: 0.15rem solid rgb(243, 200, 183);
@@ -296,7 +296,6 @@ body {
     bottom: 0;
     left: 0;
     height: 40px;
-    position:fixed;
 
 }
 
@@ -370,3 +369,16 @@ body {
       text-align: center;
   }
 
+/* carrosel de imagens */
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+    flex-direction: column;
+}
