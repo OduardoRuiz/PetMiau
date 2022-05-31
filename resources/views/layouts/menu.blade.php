@@ -40,9 +40,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-light menuPrincipal">
         <div class="container-fluid">
-            <img class="logoimg"
-                src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiaulogotransparente1.png"
-                alt="Logo PetMiau">
+            <a class="" href="{{ route('home') }}"><img class="logoimg"
+                    src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiaulogotransparente1.png"
+                    alt="Logo PetMiau"></a>
+
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span>
@@ -102,40 +104,40 @@
 
 
 
-                    
-                        @if (Auth::user() == null)
-                            <li class="nav-item">
-                                <a class="nav-link menuAdm" href="{{ route('login') }}">Login</a>
-                            </li>
-                        @else
-                            <li class="nav-item">
-                                <b class="nav-link d-flex  menuAdm">Olá, {{ Auth::user()->name }}</b>
-                            </li>
-                        @endif
+
+                    @if (Auth::user() == null)
+                        <li class="nav-item">
+                            <a class="nav-link menuAdm" href="{{ route('login') }}">Login</a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <b class="nav-link d-flex  menuAdm">Olá, {{ Auth::user()->name }}</b>
+                        </li>
+                    @endif
 
 
-                        @if (Auth::user() == null)
-                            <li class="nav-item" >
-                                <a class="nav-link menuAdm" href="{{ route('register') }}">Registrar</a>
-                            </li>
-                        @else
-                            <li class="nav-item">
-                                <div class="">
+                    @if (Auth::user() == null)
+                        <li class="nav-item">
+                            <a class="nav-link menuAdm" href="{{ route('register') }}">Registrar</a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <div class="">
 
-                                    <form  method="POST" action="{{ route('logout') }}">
-                                        @csrf
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
 
 
-                                        <a :href="route('logout')" class=" btnSair nav-link menuAdm"
-                                            style="color:blue" onclick="event.preventDefault();
+                                    <a :href="route('logout')" class=" btnSair nav-link menuAdm" style="color:blue"
+                                        onclick="event.preventDefault();
                                             this.closest('form').submit();">
-                                            {{ __('Sair') }}
+                                        {{ __('Sair') }}
                                     </a>
-                                    </form>
+                                </form>
 
-                                </div>
-                            </li>
-                    
+                            </div>
+                        </li>
+
 
                 </ul>
                 @endif

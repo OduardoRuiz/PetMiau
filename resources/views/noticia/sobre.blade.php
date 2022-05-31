@@ -11,35 +11,34 @@
     @endif
 
     <main>
-        <h1 class="texto h4">Sobre nós</h1>
+        <h1 class="texto h4 mt-3">Sobre nós</h1>
 
         <div class="texto">
             <img src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiaulogotransparente1.png"
                 alt="Você não tem pets cadastrados imagem">
             <div class="textoSobre m-auto m-lg-auto m-sm-4">
                 <hr>
-                <p> O Pet Miau tem a missão facilitar a organização do tutor com as informações de seus pets, oferecendo
-                    uma plataforma onde se pode cadastrar informações do seu pet, além de se informar sobre as últimas
-                    novidades do mundo animal.
+                <p> O PetMiau tem a missão de tornar o dia-a-dia do tutor mais prático e organizado, por meio do
+                    cadastro das informações do seu pet, além de se informar sobre as últimas novidades do mundo animal.
                 </p>
                 <h6>QrCode</h6>
-                <p>Ao realizar seu cadastro e de seu pet em nossa plataforma, é possivel gerar um QrCode, de forma
-                    individual, para cada um de seus pets.</p>
-                <p>Com isto, será possivel que qualquer pessoa que acesse o qrCode veja as informações que lá estão
-                    cadastradas,
-                    então assim caso seu pet fuja ou se perca, poderão te achar facilmente e ajudar seu bichinho a sair
-                    das rua</p>
-                <h6>Coleiras</h6>
-                <p>É possivel adquirir em nossa Loja, Coleiras/Pulseiras personalizadas com o QrCode do seu pet, assim
-                    seu bichinho irá ficar elegante e protegido
-                    com as informações dele cadastradas em nosso sistema de dados.</p>
-                <h6>Caderneta de vacinação </h6>
-                <p>Sabe aquele momento em que você esta com pressa para sair para a consulta do seu bichinho e não acha
-                    a carteirinha de vacinação do seu pet ?
-                    Foi pensando nesses perrengues, que criamos o recurso de vacinação virtual, para nosso amados pets.
+                <p>Ao criar a conta e cadastrar seu pet em nossa plataforma, será gerado um QRCode que poderá ser
+                    aplicado na plaquinha junto com a coleira do mesmo.
                 </p>
-                <p>Lá é possivel deixar todo o historico de vacinação, junto com a data, e acessar de qualquer lugar que
-                    você quiser.
+                <p>O escaneamento do código gera a exibição dos dados do animal e de seu tutor, agilizando a
+                    identificação e contato caso o pet fuja ou se perca, assim como para eventuais consultas ao
+                    veterinário.</p>
+
+                <h6>Coleiras</h6>
+                <p>Em nossa loja virtual você pode adquirir as coleiras e pulseiras personalizadas com o QrCode gerado,
+                    assim seu bichinho irá ficar elegante e com fácil identificação.</p>
+                <h6>Caderneta de vacinação </h6>
+                <p>Sabe aquele momento em que você esta com pressa para sair para a consulta do seu pet e acaba perdendo
+                    um tempão procurando a carteirinha de vacinação? Foi pensando nesse perrengue, que criamos a
+                    caderneta de vacinação virtual.
+                </p>
+                <p>Nela, ficará registrado o histórico completo de de vacinação, com a praticidade de acessar a qualquer
+                    momento, com apenas alguns cliques.
                 </p>
 
 
@@ -71,7 +70,7 @@
                     </div>
 
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/lukeCoberta.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/bruc2.jpeg"
                             class="img-fluid imgRodapeSobre  ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
@@ -81,27 +80,27 @@
                     <!--Numero minimo de imagens até aqui-->
 
                     <div class="col-11 col-md-6 col-lg-2 mt-1  ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/Duda.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/gato1gui.jpeg"
                             class="img-fluid imgRodapeSobre  ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/carlosSol.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/gatobrancogui.jpeg"
                             class="img-fluid imgRodapeSobre ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1  ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/bruc.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/gatobrancogui2.jpeg"
                             class="img-fluid imgRodapeSobre  ">
 
                     </div>
 
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/luk.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/gatogui.jpeg"
                             class="img-fluid imgRodapeSobre ">
 
                     </div>
 
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/lukeCoberta.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/tartarugaGui.jpeg"
                             class="img-fluid imgRodapeSobre  ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
