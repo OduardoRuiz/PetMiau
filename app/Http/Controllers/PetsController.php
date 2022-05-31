@@ -29,7 +29,7 @@ class PetsController extends Controller
             $imagem = $request->file('imagem')->store('/public/pets');
             $imagem = str_replace('public/', 'storage/', $imagem);
         } else {
-            $imagem = "storage/pets/imagempadrao.png";
+            $imagem = "https://storage.googleapis.com/petmiau-imagens/front-end/userdefault.png";
         } 
 
        
@@ -61,7 +61,7 @@ class PetsController extends Controller
             $imagem = $request->file('imagem')->store('/public/pets');
             $imagem = str_replace('public/', 'storage/', $imagem);
             Storage::delete($pet->imagem);
-            if (!$pet->imagem == 'storage/pets/imagempadrao.png')
+            if (!$pet->imagem == 'https://storage.googleapis.com/petmiau-imagens/front-end/userdefault.png')
                 Storage::delete($pet->imagem);
         } else {
             $imagem = $pet->imagem;
