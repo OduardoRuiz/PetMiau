@@ -4,9 +4,8 @@
 
     @if (session()->has('sucesso'))
 
-    <div>
-        {{session()->get('sucesso')}}
-
+    <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
+        <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
     </div>
  @endif
     <h1 class="titleAdmin">Lista de endereços</h1>

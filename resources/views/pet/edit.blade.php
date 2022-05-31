@@ -41,6 +41,7 @@
 
             </select>
         </div>
+        <!--
         <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Vacinas</span>
 
@@ -52,6 +53,7 @@
             </select>
 
         </div>
+        -->
 
         <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Imagem</span>

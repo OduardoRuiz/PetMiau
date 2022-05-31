@@ -3,16 +3,16 @@
 <body>
     @include('layouts.menu')
 
-    @if (session()->has('sucesso'))
-        <div>
-            {{ session()->get('sucesso') }}
 
-        </div>
-    @endif
+   
 
     <main class="m-5 ">
 
-
+        @if (session()->has('sucesso'))
+        <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
+            <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
+        </div>
+        @endif
 
         <div class=" row d-flex justify-content-center">
 
@@ -34,7 +34,8 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLongTitle">QRcode</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
@@ -123,7 +124,7 @@
 
                     </div>
                 @endforeach
-                <div class="mt-4 paginacao ">
+                <div class="mt-4 d-flex justify-content-center  ">
                     {{ $pets->links() }}
 
                 </div>
@@ -138,4 +139,3 @@
     </main>
 
     @include('layouts.footer')
-

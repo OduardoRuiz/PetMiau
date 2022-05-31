@@ -2,14 +2,6 @@
 
 <body class="text-center">
     @include('layouts.menu')
-
-    @if (session()->has('sucesso'))
-        <div>
-            {{ session()->get('sucesso') }}
-
-        </div>
-    @endif
-
     <main>
         <h1 class="texto h4 mt-3">Sobre nós</h1>
 

@@ -3,12 +3,6 @@
 <body class="content">
     @include('layouts.menu')
 
-    @if (session()->has('sucesso'))
-        <div>
-            {{ session()->get('sucesso') }}
-
-        </div>
-    @endif
     <h1 class="h5 text-center mt-5">Blog - Noticias e Curiosidades</h1>
     <main class="mainNoticias  row">
 

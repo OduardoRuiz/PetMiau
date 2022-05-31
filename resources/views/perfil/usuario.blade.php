@@ -4,9 +4,8 @@
     @include('layouts.menu')
 
     @if (session()->has('sucesso'))
-        <div>
-            {{ session()->get('sucesso') }}
-
+        <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
+            <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
         </div>
     @endif
 
@@ -20,7 +19,7 @@
                 <img src="{{ $user->imagem }}" style="width:100px">
             </div>
             <div class="mb-3">
-              <span> {{ $user->name }}</span> 
+                <span> {{ $user->name }}</span>
             </div>
             <div>
                 <a href="{{ Route('user.edit', $user->id) }}" class="btn btn-sm btn-warning">Editar meu perfil</a>
@@ -58,7 +57,8 @@
                 </div>
 
                 <div>
-                    <a href="{{ Route('endereco.edit', $endereco->id) }}" class="btn btn-sm btn-warning">Editar informações</a>
+                    <a href="{{ Route('endereco.edit', $endereco->id) }}" class="btn btn-sm btn-warning">Editar
+                        informações</a>
                 </div>
 
             </div>

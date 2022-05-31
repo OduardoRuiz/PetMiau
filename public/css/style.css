@@ -234,8 +234,7 @@ body {
 
 .paginacao {
 
-    text-align: center;
-    margin-right: 3.5rem;
+   color: #EAF6FB;
 }
 
 .semPet {
@@ -381,4 +380,8 @@ body {
     min-height: 100vh;
     display: flex; 
     flex-direction: column;
+}
+.balaoAlerta { 
+    border-radius: 5px;
+    
 }

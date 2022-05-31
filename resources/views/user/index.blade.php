@@ -1,14 +1,13 @@
 @include('layouts.header')
+
 <body>
     @include('layouts.menu')
 
     @if (session()->has('sucesso'))
-
-    <div>
-        {{session()->get('sucesso')}}
-
-    </div>
- @endif
+        <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
+            <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
+        </div>
+    @endif
 
     <h1 class="titleAdmin">Apagar usuários</h1>
 
@@ -24,23 +23,24 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach($users as $user)
-                <tr>
-                    <td>{{ $user->id }}</td>
-                    <td>{{ $user->name }}</td>
-                    <td><img src="{{ $user->imagem }}" style="width:35px"></td>
+                @foreach ($users as $user)
+                    <tr>
+                        <td>{{ $user->id }}</td>
+                        <td>{{ $user->name }}</td>
+                        <td><img src="{{ $user->imagem }}" style="width:35px"></td>
 
-                    <td>
+                        <td>
 
 
-                        <form method="POST" action="{{Route('user.destroy',$id=$user->id)}}" class="d-inline">
-                            @method('DELETE')
-                            @csrf
-                            <button type="submit" class="btn btn-sm btn-danger" onsubmit="return remover()">Apagar</button>
-                        </form>
-                    </td>
-                </tr>
-
+                            <form method="POST" action="{{ Route('user.destroy', $id = $user->id) }}"
+                                class="d-inline">
+                                @method('DELETE')
+                                @csrf
+                                <button type="submit" class="btn btn-sm btn-danger"
+                                    onsubmit="return remover()">Apagar</button>
+                            </form>
+                        </td>
+                    </tr>
                 @endforeach
 
             </tbody>
@@ -48,4 +48,5 @@
         @include('layouts.footer')
 
 </body>
+
 </html>
