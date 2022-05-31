@@ -332,10 +332,24 @@ body {
     margin-right: 0px;
     
 }
-.imgSobre{
+.texto {
     text-align: center;
-    display: flex;
-    justify-content: center;
+ }
+.texto img{
+    
+        width: 15rem;
+        height: 15rem;
+    
+    
+}
+.textoSobre{
+    text-align: justify;
+    max-width: 50rem;
+    
+
+}
+.imgRodapeSobre{ 
+    border: 0.02rem solid #709CB2;
     
 }
 .botaoCarrosel:hover{
@@ -345,12 +359,7 @@ body {
     
 
 }
-.texto {
-    max-width: 80%;
-    margin: 10px;
-    text-align: center;
-    margin-bottom: 30px;
-}
+
 .mainHome{ 
     text-align: center;
     display: flex;
@@ -360,3 +369,4 @@ body {
   .divCarrosel{ 
       text-align: center;
   }
+
