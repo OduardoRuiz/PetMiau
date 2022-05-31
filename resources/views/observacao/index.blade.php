@@ -9,11 +9,13 @@
         </div>
     @endif
 
+    <div>
 
-    <button type="button" class="btn btn-primary mt-2 ml-2" data-toggle="modal" data-target="#exampleModalCenter">
-        Nova anotação
-    </button>
-
+        <button type="button" class="btn btn-primary mt-2 ml-2" data-toggle="modal" data-target="#exampleModalCenter">
+            Nova anotação
+        </button>
+        
+    </div>
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
