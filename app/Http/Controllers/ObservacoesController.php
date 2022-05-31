@@ -11,7 +11,7 @@ class ObservacoesController extends Controller
 {
     public function index(Request $request,$pet_id)
     {
-        $obs= DB::table('obsevacoes')->where('pet_id', '=', $pet_id)->get();
+        $obs= DB::table('obsevacoes')->where('pet_id', '=', $pet_id)->orderBy('updated_at','DESC')->get();
         $nomepet = DB::table('pets')->where('id', '=', $pet_id)->value('nome');
 
         return view('observacao.index')->with(['observacoes'=>$obs,'pet_id'=>$pet_id, 'nomepet'=>$nomepet]);
