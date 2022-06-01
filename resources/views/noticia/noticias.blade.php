@@ -173,14 +173,11 @@
 
 
         </section>
-
-        <!---->
-
-
-        <!---->
+        @include('layouts.footer')
 
     </main>
-    @include('layouts.footer')
+    
+
 
 </body>
 

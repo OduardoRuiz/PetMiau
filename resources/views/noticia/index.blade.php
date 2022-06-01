@@ -1,5 +1,6 @@
 @include('layouts.header')
 <body>
+    <main>
     @include('layouts.menu')
 
     @if (session()->has('sucesso'))
@@ -43,6 +44,7 @@
 
             </tbody>
         </table>
+       </main>
         @include('layouts.footer')
 
 </body>
