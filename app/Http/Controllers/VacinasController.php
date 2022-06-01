@@ -54,20 +54,20 @@ class VacinasController extends Controller
             session()->flash('sucesso','vacina apagada com sucesso');
             return redirect(route('vacina.index'));
 
-            
+
 
         }else {
-            session()->flash('sucesso','vacina não pode ser apagagada');
+            session()->flash('sucesso','vacina não pode ser apagada');
             return redirect(route('vacina.index'));
         }
-    
-   
-     
+
+
+
     }
 
     public function criar(Request $request,Vacina $vacina,$id)
     {
-        
+
         $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
         $nomevacinas = Vacina::all();
         $id1=$id;
@@ -78,13 +78,13 @@ class VacinasController extends Controller
             'data' => $request->data
             ]);
 
-        
+
             return redirect("/vacinas/$id");
-     
+
     }
     public function lista(PetVacina $petvacina,$id)
     {
-        
+
         $vacinas= DB::table('pet_vacina')->where('pet_id', '=', $id)->get();
         $nomevacinas = Vacina::all();
         $id1=$id;
@@ -92,7 +92,7 @@ class VacinasController extends Controller
 
 
         return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1, 'nomepet'=> $nomepet]);
-     
+
     }
     public function carregar($id){
 
@@ -103,7 +103,7 @@ class VacinasController extends Controller
 
 
         return view('vacina_pet.index')->with(['vacinas'=>$vacinas,'nomes'=>$nomevacinas,'id'=>$id1, 'nomepet'=> $nomepet]);
-     
+
     }
 
     public function apagar($id)
@@ -111,9 +111,9 @@ class VacinasController extends Controller
 
     $pet= DB::table('pet_vacina')->where('updated_at', '=', $id)->value('pet_id');
     $vacinas= DB::table('pet_vacina')->where('updated_at', '=', $id)->delete();
-    
+
     return redirect("/vacinas/$pet");
-     
+
     }
 
 

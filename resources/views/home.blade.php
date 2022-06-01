@@ -41,7 +41,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="w-100 img-fluid"
+                            <img class="w-100 img-fluid" id="imgGatoHome"
                                 src="https://storage.googleapis.com/petmiau-imagens/front-end/gifbanner.gif"
                                 alt="Third slide">
                         </div>
@@ -94,7 +94,7 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Encontre os facilmente</h2>
-                            <p class="h6 ">Em caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações.
+                            <p class="h6 ">Caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações para devolvê-lo.
                             </p>
 
                         </div>

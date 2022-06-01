@@ -6,10 +6,11 @@
 
 
     <h1 class="ml-1">Carteirinha De Vacinação: {{$nomepet}} </h1>
-
-    <button type="button" class="btn btn-primary mb-2 ml-1" data-toggle="modal" data-target="#exampleModalCenter2">
-        Adicionar Vacina
-    </button>
+    <div>
+        <button type="button" class="btn btn-primary mb-2 ml-1" data-toggle="modal" data-target="#exampleModalCenter2">
+            Adicionar Vacina
+        </button>
+    </div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
@@ -17,7 +18,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Adicione uma vacina</h5>
+                    <h5 class="modal-title " id="exampleModalLongTitle">Adicione uma vacina</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -26,7 +27,7 @@
                     <form action="{{ route('vacina_pet.criar', $id) }}" method="post">
                         @csrf
 
-                        <div class="row">
+                        <div class="row ml-1 mr-1">
                             <span class="form-label">Nome da vacina</span>
                             <select class="form-select" name="vacina_id" required>
                                 @foreach ($nomes as $nome)
@@ -79,7 +80,7 @@
 
                         @php
                         $originalDate = $vacina->data;
-                        $newDate = date("d-m-Y", strtotime($originalDate));    
+                        $newDate = date("d-m-Y", strtotime($originalDate));
                         @endphp
                         <td>{{ $newDate }}</td>
 

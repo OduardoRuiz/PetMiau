@@ -5,7 +5,7 @@
     <main>
         <h1 class="texto h4 mt-3">Sobre nós</h1>
 
-        <div class="texto">
+        <div class="texto ml-2 mr-2">
             <img src="https://storage.googleapis.com/petmiau-imagens/front-end/petmiaulogotransparente1.png"
                 alt="Você não tem pets cadastrados imagem">
             <div class="textoSobre m-auto m-lg-auto m-sm-4">
@@ -76,7 +76,7 @@
                             class="img-fluid imgRodapeSobre  ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/gatobrancogui.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/filhotetami.jpg"
                             class="img-fluid imgRodapeSobre ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1  ">
@@ -96,7 +96,7 @@
                             class="img-fluid imgRodapeSobre  ">
                     </div>
                     <div class="col-11 col-md-6 col-lg-2 mt-1 ">
-                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/lukeCoberta.jpeg"
+                        <img src="https://storage.googleapis.com/petmiau-imagens/front-end/clientes/pitbullpretotami.jpg"
                             class="img-fluid imgRodapeSobre  ">
                     </div>
 

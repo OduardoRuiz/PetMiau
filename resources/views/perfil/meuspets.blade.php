@@ -4,7 +4,7 @@
     @include('layouts.menu')
 
 
-   
+
 
     <main class="m-5 ">
 
@@ -44,7 +44,7 @@
                                         $url = 'http://127.0.0.1:8000/geral/';
                                         $url1 = 'http://68.183.115.206/geral/';
                                         $petid = $pet->id;
-                                        
+
                                     @endphp
 
                                     <script>
@@ -79,9 +79,9 @@
                                 $nascimento = $pet->data_nascimento;
                                 $idade = (int) $hoje - (int) $nascimento;
                             @endphp
-                            <span>nome: {{ $pet->nome }} </span>
-                            <p>Peso: {{ $pet->peso }}kg</p>
-                            <p>Idade: {{ $idade }}</p>
+                            <p class="petIndex">Nome: {{ $pet->nome }} </p>
+                            <p class="petIndex">Peso: {{ $pet->peso }}kg</p>
+                            <p class="petIndex">Idade: {{ $idade }}</p>
                         </div>
 
 

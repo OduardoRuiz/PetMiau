@@ -43,6 +43,41 @@ body {
     background-color: #e7f4fa;
 }
 
+.registreLogin:hover {
+    color: #f39a76;
+
+}
+
+.hoverDoMenu li {
+    float: left;
+    display: inline-block;
+    padding: 10px;
+    position: relative
+}
+
+.hoverDoMenu a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #F3C8B7;
+    transition: width .4s ease;
+}
+
+.hoverDoMenu a:hover:after {
+    width: 100%;
+    left: 0;
+    background: #F3C8B7;
+}
+
+.menuCanto {
+    text-align: left;
+    display: flex;
+}
+
 /* cadastrar pet e usuário */
 
 .cadastrarPet,
@@ -189,6 +224,15 @@ body {
 
 }
 
+.petIndex {
+   text-align: left;
+   padding-left: 25%;
+}
+
+/* Vacina */
+
+
+
 /* QrCode */
 
 .telaQrCode {
@@ -199,8 +243,6 @@ body {
 }
 
 
-
-
 /* carrosel de imagens */
 .carousel-inner div {
     padding-left: 10%;
@@ -209,28 +251,30 @@ body {
 }
 
 .carousel-inner img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 25rem;
+    max-height: 25rem;
+    min-height: 20rem;
+    min-width: 20rem;
     border-radius: 0.2em;
 
 }
+#imgGatoHome {
+    max-width: 30rem;
+    max-height: 30rem;
+    min-height: 21rem;
+    min-width: 21rem;
+    border-radius: 0.2em;
 
+}
 .carousel-indicators li {
     background-color: rgb(10, 10, 248);
     width: 2em;
     height: 0.3em;
 }
 
-.imagemHome {
-    width: 30rem;
-    height: 30rem;
-    text-align: center;
-}
 
-.registreLogin:hover {
-    color: #f39a76;
 
-}
+/* pagina pet */
 
 .paginacao {
 
@@ -249,45 +293,88 @@ body {
 }
 
 
+/* noticias */
 
-
-.hoverDoMenu li {
-    float: left;
-    display: inline-block;
-    padding: 10px;
-    position: relative
-}
-
-
-
-.hoverDoMenu a:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: #F3C8B7;
-    transition: width .4s ease;
-}
-
-.hoverDoMenu a:hover:after {
-    width: 100%;
-    left: 0;
-    background: #F3C8B7;
-}
-
-.menuCanto {
-    text-align: left;
+.mainNoticias{
+    text-align: center;
     display: flex;
+    justify-content: center;
+    height: 100%;
 }
 
+.sectionNoticias{
+      height: 100%;
+}
+
+.imgCardNoticias {
+    max-width: 100%;
+    max-height: 70%;
+}
+
+.titleAdmin{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+.texto {
+    text-align: center;
+ }
+.texto img{
+
+        width: 15rem;
+        height: 15rem;
 
 
+}
+.textoSobre{
+    text-align: justify;
+    max-width: 50rem;
+
+
+}
+.imgRodapeSobre{
+    border: 0.02rem solid #709CB2;
+}
+
+.botaoCarrosel:hover{
+
+    box-shadow: #34495e;
+    color: #565F99;
+}
+
+.mainHome{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+  .divCarrosel{
+      text-align: center;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+}
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.balaoAlerta {
+    border-radius: 5px;
+
+}
 .divFooter {
     background-color: #E7F4FA;
-     
+
     text-align: center;
     width: 100%;
     border-top: 0.15rem solid rgb(243, 200, 183);
@@ -307,81 +394,4 @@ body {
 
 .content {
     min-height: calc(100vh - 70px);
-  }
-  
-  .mainNoticias{ 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
-  .sectionNoticias{ 
-      height: 100%;
-  }
-  .imgCardNoticias {
-    max-width: 100%;
-    max-height: 70%;
-}
-.titleAdmin{ 
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    
-}
-.texto {
-    text-align: center;
- }
-.texto img{
-    
-        width: 15rem;
-        height: 15rem;
-    
-    
-}
-.textoSobre{
-    text-align: justify;
-    max-width: 50rem;
-    
-
-}
-.imgRodapeSobre{ 
-    border: 0.02rem solid #709CB2;
-    
-}
-.botaoCarrosel:hover{
-    
-    box-shadow: #34495e;
-    color: #565F99;
-    
-
-}
-
-.mainHome{ 
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-  }
-  .divCarrosel{ 
-      text-align: center;
-  }
-
-/* carrosel de imagens */
-footer {
-    width: 100%;
-    height: auto;
-    margin-top: auto;
-}
-body {
-    margin: 0;
-    width: 100%;
-    min-height: 100vh;
-    display: flex; 
-    flex-direction: column;
-}
-.balaoAlerta { 
-    border-radius: 5px;
-    
 }
