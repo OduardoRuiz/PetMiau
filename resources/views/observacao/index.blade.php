@@ -32,7 +32,7 @@
                         @method('PATCH')
                         @csrf
 
-                        <div class="row">
+                        <div class="row m-1">
                             <span class="form-label"></span>
                             <textarea class="form-control" name="texto"></textarea>
 
@@ -85,7 +85,7 @@
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Edite a anotação</h5>
                                             <button type="button" class="close" data-dismiss="modal"
                                                 aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
@@ -97,9 +97,8 @@
                                                 method="post">
                                                 @method('PATCH')
                                                 @csrf
-                                                <div class="row">
-                                                    <label for="" class="form-label">Texto</label>
-                                                    <input type="text" name="texto" class="form-control"
+                                                <div class="">
+                                                    <input type="text" name="texto" class="form-control m-1"
                                                         value="{{ $observacao1->texto }}">
                                                 </div>
 
