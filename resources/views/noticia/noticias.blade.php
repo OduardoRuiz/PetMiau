@@ -6,7 +6,7 @@
     <h1 class="h4 text-center mt-2">Blog - Noticias e Curiosidades</h1>
     <main class="mainNoticias  row">
 
-        <section class=" mt-5 w-100 section">
+        <section class=" mt-2 w-100">
 
 
             <div id="carouselExampleControls" class="carousel slide align-content-center" data-ride="carousel">
