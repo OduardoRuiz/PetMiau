@@ -1,7 +1,7 @@
 @include('layouts.header')
 <body>
     @include('layouts.menu')
-    <h1 class="cadastrarTipo">Criar tipo de Pet</h1>
+    <h1 class="cadastrarTipo h4 mt-2">Criar tipo de Pet</h1>
 
 
     <form action="{{route('tipo.store')}}" method="post">

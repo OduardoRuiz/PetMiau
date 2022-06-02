@@ -10,7 +10,7 @@
         </div>
     @endif
 
-    <h1 class="titleAdmin">Adicionar vacinas</h1>
+    <h1 class="titleAdmin h4 mt-2">Adicionar vacinas</h1>
 
     <div><a href="{{ route('vacina.create') }}" class="btn btn-md btn-primary ml-3">Criar vacina</a></div>
 

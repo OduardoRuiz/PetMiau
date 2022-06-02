@@ -3,7 +3,7 @@
     @include('layouts.menu')
 
 
-    <h1  class="cadastrarUser">Cadastre suas informações</h1>
+    <h1  class="cadastrarUser h4 mt-2">Cadastre suas informações</h1>
     <p class="completeUser">Complete os campos a seguir</p>
 
     <form action="{{route('endereco.store')}}" method="post">

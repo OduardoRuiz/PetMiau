@@ -10,7 +10,7 @@
         </div>
     @endif
 
-    <h1 class="titleAdmin">Criar tipos de pet</h1>
+    <h1 class="titleAdmin h4">Criar tipos de pet</h1>
     <div><a href="{{ route('tipo.create') }}" class="btn btn-md btn-primary ml-4">Novo tipo</a></div>
 
 

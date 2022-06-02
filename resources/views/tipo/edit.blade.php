@@ -2,7 +2,7 @@
 <body>
     @include('layouts.menu')
 
-    <h1 class="cadastrarTipo">Editar tipo do Pet</h1>
+    <h1 class="cadastrarTipo h4 mt-2">Editar tipo do Pet</h1>
 
 
     <form action="{{route('tipo.update', $tipo->id)}}" method="post">

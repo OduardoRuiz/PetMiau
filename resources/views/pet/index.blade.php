@@ -5,13 +5,13 @@
 
     @if (session()->has('sucesso'))
         <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
-            <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
+            <div class="text-center balaoAlert">{{ session()->get('sucesso') }}</div>
         </div>
     @endif
 
 
 
-    <h1 class="titleAdmin">Lista dos pets</h1>
+    <h1 class="titleAdmin h4">Lista dos pets</h1>
 
     <table class=" m-3 table table-striped">
         <thead>

@@ -3,7 +3,7 @@
 <body>
     @include('layouts.menu')
 
-    <h1 class="titleAdmin">Crie uma noticia</h1>
+    <h1 class="titleAdmin h4 mt-2">Crie uma noticia</h1>
 
     <div class="m-3">
 

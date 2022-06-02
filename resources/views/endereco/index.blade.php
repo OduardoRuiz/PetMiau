@@ -9,7 +9,7 @@
         <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
     </div>
  @endif
-    <h1 class="titleAdmin">Lista de endereços</h1>
+    <h1 class="titleAdmin h4 mt-2">Lista de endereços</h1>
 
     <div class="m-4 row">
         <table class="table table-striped">

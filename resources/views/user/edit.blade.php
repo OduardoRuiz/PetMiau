@@ -7,7 +7,7 @@
 
 
 
-        <h1 class="cadastrarUser">Edite suas informações</h1>
+        <h1 class="cadastrarUser h4 mt-2">Edite seu perfil</h1>
 
         <form action="{{ route('user.update', $user->id, $id = $user->id) }}" method="post" enctype="multipart/form-data">
             @method('patch')

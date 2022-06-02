@@ -9,7 +9,7 @@
         </div>
     @endif
 
-    <h1 class="titleAdmin">Apagar usuários</h1>
+    <h1 class="titleAdmin h4">Apagar usuários</h1>
 
     <div class="row m-3">
         <table class="table table-striped ">

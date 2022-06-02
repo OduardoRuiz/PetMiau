@@ -6,7 +6,7 @@
     <main>
 
 
-    <h1 class="editEndereco">Edite seu endereço</h1>
+    <h1 class="editEndereco h4 mt-2">Edite seu endereço</h1>
 
 
 

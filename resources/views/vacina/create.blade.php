@@ -1,7 +1,7 @@
 @include('layouts.header')
 <body>
     @include('layouts.menu')
-    <h1 class="cadastrarVacina">Criar vacina</h1>
+    <h1 class="cadastrarVacina h4 mt-2">Criar vacina</h1>
 
     <form action="{{route('vacina.store')}}" method="post">
     @csrf

@@ -10,7 +10,7 @@
     </div>
  @endif
 
-    <h1 class="titleAdmin">Criação de notícias</h1>
+    <h1 class="titleAdmin h4 mt-2">Criação de notícias</h1>
         <div><a href="{{ route('noticia.create') }}" class="btn btn-md btn-primary ml-3">Criar noticia</a></div> 
 
     <div class="m-3 row">

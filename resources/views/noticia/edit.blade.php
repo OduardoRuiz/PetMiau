@@ -2,7 +2,7 @@
 <body>
     @include('layouts.menu')
 
-    <h1 class="editNoticia">Editar notícia</h1>
+    <h1 class="editNoticia h4 mt-2">Editar notícia</h1>
 
 
     <form action="{{route('noticia.update', $noticia->id)}}" method="post">
