@@ -37,7 +37,6 @@
             </div>
 
             <section class="container text-dark mt-4 mb-5 ">
-
                 <h6 class="">Conheça nossos clientes</h6>
 
                 <div class="row mt-5 ">
