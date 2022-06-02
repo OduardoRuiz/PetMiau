@@ -41,25 +41,33 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="w-100 img-fluid" id="imgGatoHome"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHome.gif"
-                                alt="banner meus pets">
+                            <a class="" href="{{ route('perfil.meuspets') }}">
+                                <img class="w-100 img-fluid" id="imgGatoHome"
+                                    src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHome.gif"
+                                    alt="banner meus pets">
+                            </a>
                         </div>
                         <div class="carousel-item ">
-                            <img class="w-100  img-fluid"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomeBlog.png"
-                                alt="banner blog">
+                            <a class="" href="{{ route('noticia.noticias') }}">
+                                <img class="w-100  img-fluid"
+                                    src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomeBlog.png"
+                                    alt="banner blog">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                            <img class="w-100  img-fluid"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomePerfil.png"
-                                alt="Banner home perfil">
+                            <a class="" href="{{ route('perfil.usuario') }}">
+                                <img class="w-100  img-fluid"
+                                    src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomePerfil.png"
+                                    alt="Banner home perfil">
+                            </a>
                         </div>
                         <div class="carousel-item">
-                          <img class="w-100  img-fluid"
-                              src="https://storage.googleapis.com/petmiau-imagens/front-end/bannercadastreHome.png"
-                              alt="banner cadaste-se">
-                      </div>
+                            <a class="" href="{{ route('pet.create') }}">
+                                <img class="w-100  img-fluid"
+                                    src="https://storage.googleapis.com/petmiau-imagens/front-end/bannercadastreHome.png"
+                                    alt="banner cadaste-se">
+                            </a>
+                        </div>
 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -83,7 +91,8 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Coleiras</h2>
-                            <p class="h6 ">Conheça nossas coleiras com QrCode Personalizado com as informações do seu pet.
+                            <p class="h6 ">Conheça nossas coleiras com QrCode Personalizado com as
+                                informações do seu pet.
                             </p>
 
                         </div>
@@ -94,7 +103,8 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Encontre os facilmente</h2>
-                            <p class="h6 ">Caso seu pet fuja ou se perca, qualquer pessoa pode acessar as informações para devolvê-lo.
+                            <p class="h6 ">Caso seu pet fuja ou se perca, qualquer pessoa pode acessar as
+                                informações para devolvê-lo.
                             </p>
 
                         </div>
@@ -107,7 +117,8 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2 ">
                             <h2 class="h5 ">Informações</h2>
-                            <p class="h6 ">Ao cadastrar suas informações na sessão "meu perfil", é automaticamente carregada no QrCode de seus pets.
+                            <p class="h6 ">Ao cadastrar suas informações na sessão "meu perfil", é
+                                automaticamente carregada no QrCode de seus pets.
                             </p>
 
                         </div>
@@ -120,7 +131,8 @@
                             class="img-fluid imgCardNoticias ">
                         <div class="mt-2">
                             <h2 class="h5 ">Carteirinha de vacinação</h2>
-                            <p class="h6 ">Mantenha as informações de vacinação do seu pet sempre atualizada e seguras, sem risco de perda.
+                            <p class="h6 ">Mantenha as informações de vacinação do seu pet sempre atualizada
+                                e seguras, sem risco de perda.
                             </p>
 
                         </div>
