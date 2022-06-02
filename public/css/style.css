@@ -350,7 +350,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
-    margin: 5px;
+    margin: 0px;
 }
   .divCarrosel{
       text-align: center;
