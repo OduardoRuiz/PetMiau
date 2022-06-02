@@ -9,9 +9,9 @@
         </div>
     @endif
 
-    <main class="m-5">
+    <main class="m-2">
 
-        <h1 class="minhaContaPrincipal">Minha conta</h1>
+        <h1 class="minhaContaPrincipal h4">Minha conta</h1>
 
 
         <div class="minhaConta mb-3 mt-2">
@@ -33,8 +33,8 @@
                 <a href="{{ route('endereco.create') }}" class="btn btn-sm btn-primary ">Criar endereco</a>
             </div>
         @else
-            <div class="minhaConta enderecoDiv">
-                <h2 class="">Informações</h2>
+            <div class="minhaConta enderecoDiv mb-3">
+                <h2 class="h4">Informações</h2>
 
                 <div class="minhaContaEndereco">
                     <label for="" class="enderecoConta">Endereço:</label>

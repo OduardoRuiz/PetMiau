@@ -3,7 +3,7 @@
 <body class="content">
     @include('layouts.menu')
 
-    <h1 class="h5 text-center mt-5">Blog - Noticias e Curiosidades</h1>
+    <h1 class="h4 text-center mt-2">Blog - Noticias e Curiosidades</h1>
     <main class="mainNoticias  row">
 
         <section class=" mt-5 w-100 section">
@@ -42,7 +42,7 @@
 
         <section class="container text-dark mt-4 mb-5 ">
 
-            <h2 class="h3 mt-4 text-center ">Destaques do PetMiau</h2>
+            <h2 class="h4 mt-4 text-center ">Destaques do PetMiau</h2>
 
             <div class="row mt-5  mx-1">
                 <div class="col-11 col-md-6 col-lg-3 text-center ">
@@ -161,7 +161,7 @@
 
 
         </section>
-        <section class="">
+        <section class="mb-3">
             <div class="">
                 <div class="text-center col ">
                     <img src="https://storage.googleapis.com/petmiau-imagens/front-end/blogbanner.png"

@@ -154,7 +154,6 @@ body {
 .minhaContaPrincipal {
     text-align: center;
     margin-bottom: 2rem;
-    font-size: 2rem;
 }
 
 .enderecoDiv {
@@ -300,6 +299,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    margin: 5px;
 }
 
 .sectionNoticias{
@@ -350,6 +350,7 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    margin: 5px;
 }
   .divCarrosel{
       text-align: center;
