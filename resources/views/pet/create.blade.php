@@ -4,7 +4,7 @@
     @include('layouts.menu')
 
 
-    <h1 class="cadastrarPet">Cadastre seu pet</h1>
+    <h1 class="cadastrarPet mt-2">Cadastre seu pet</h1>
     <p class="completePet">Complete os campos a seguir</p>
 
     <form action="{{ Route('pet.store') }}" method="post" enctype="multipart/form-data">

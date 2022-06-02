@@ -3,7 +3,7 @@
 <body>
     @include('layouts.menu')
 
-    <h1 class="cadastrarPet">Edite as informações do seu pet</h1>
+    <h1 class="cadastrarPet mt-2">Edite as informações do seu pet</h1>
 
 
     <form action="{{ route('pet.update', $pet->id) }}" method="post" enctype="multipart/form-data">

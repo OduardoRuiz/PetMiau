@@ -9,8 +9,10 @@
         </div>
     @endif
 
-    <div>
-        <button type="button" class="btn btn-primary mt-2 ml-2" data-toggle="modal" data-target="#exampleModalCenter">
+    <div class="m-2">
+        <h1 class="ml-1 h4">Anotações: {{ $nomepet }}</h1>
+
+        <button type="button" class="btn btn-primary btn-sm mb-2 ml-2" data-toggle="modal" data-target="#exampleModalCenter">
             Nova anotação
         </button>
     </div>
@@ -54,12 +56,11 @@
 
 
 
-    <h1 class="ml-2">Anotações {{ $nomepet }}</h1>
 
 
 
-    <div class="row">
-        <table class="table table-striped ml-4">
+    <div class="row m-2">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Texto</th>
@@ -125,7 +126,7 @@
                                     onsubmit="return remover()">Apagar</button>
                             </form>
 
-                            <button type="button" class="btn btn-warning" data-toggle="modal"
+                            <button type="button" class="btn btn-sm btn-warning" data-toggle="modal"
                                 {{ 'data-target=#exampleModalCenter' . $observacao1->id . '' }}>
                                 Editar
                             </button>
