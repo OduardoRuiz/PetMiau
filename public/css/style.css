@@ -247,6 +247,12 @@ body {
   
 
 }
+.carousel-control-next { 
+    margin: 0;
+}
+.carousel-control-prev { 
+    margin: 0;
+}
 
 .carousel-inner img {
     max-width: 25rem;
