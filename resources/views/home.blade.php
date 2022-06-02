@@ -30,7 +30,7 @@
 
         <div class="mainHome mt-4 row">
 
-            <section class="m-0">
+            <section class="m-0 p-0">
                 <div id="carouselExampleIndicators" class="carousel slide align-content-center" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
