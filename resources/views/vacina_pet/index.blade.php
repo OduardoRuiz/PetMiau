@@ -6,7 +6,7 @@
     <div class="m-2">
         <h1 class="ml-1">Carteirinha De Vacinação: {{ $nomepet }} </h1>
         <div>
-            <button type="button" class="btn btn-primary mb-2 ml-1" data-toggle="modal"
+            <button type="button" class="btn btn-primary mb-2 ml-2" data-toggle="modal"
                 data-target="#exampleModalCenter2">
                 Adicionar Vacina
             </button>
