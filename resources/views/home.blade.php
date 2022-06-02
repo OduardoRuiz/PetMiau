@@ -42,23 +42,23 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="w-100 img-fluid" id="imgGatoHome"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/gifbanner.gif"
-                                alt="Third slide">
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHome.gif"
+                                alt="banner meus pets">
                         </div>
                         <div class="carousel-item ">
                             <img class="w-100  img-fluid"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/perfillink.png"
-                                alt="First slide">
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomeBlog.png"
+                                alt="banner blog">
                         </div>
                         <div class="carousel-item">
                             <img class="w-100  img-fluid"
-                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bloglink.png"
-                                alt="Second slide">
+                                src="https://storage.googleapis.com/petmiau-imagens/front-end/bannerHomePerfil.png"
+                                alt="Banner home perfil">
                         </div>
                         <div class="carousel-item">
                           <img class="w-100  img-fluid"
-                              src="https://storage.googleapis.com/petmiau-imagens/front-end/cadastrar%20pet%20link.png"
-                              alt="Second slide">
+                              src="https://storage.googleapis.com/petmiau-imagens/front-end/bannercadastreHome.png"
+                              alt="banner cadaste-se">
                       </div>
 
                     </div>
