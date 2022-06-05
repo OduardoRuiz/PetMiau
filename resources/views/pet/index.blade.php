@@ -1,8 +1,9 @@
 @include('layouts.header')
 
 <body>
+    @include('layouts.menu')
+
     <main>
-        @include('layouts.menu')
 
         @if (session()->has('sucesso'))
             <div class=" text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
