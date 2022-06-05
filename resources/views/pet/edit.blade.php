@@ -6,7 +6,7 @@
         element.addEventListener("change", function() {
             var size = element.files[0].size;
             console.log(size);
-            if (size <= 3141109) { //750MB         
+            if (size <= 90000) { //90MB           
             } else {
                 alert('Imagem muito grande por gentileza escolher outra menor '); //Acima do limite
                 element.value = ""; //Limpa o campo          
