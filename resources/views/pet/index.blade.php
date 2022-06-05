@@ -5,6 +5,7 @@
 
     <main>
 
+    
         @if (session()->has('sucesso'))
             <div class=" text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
                 <div class="text-center balaoAlert">{{ session()->get('sucesso') }}</div>
@@ -15,8 +16,9 @@
 
         <h1 class="titleAdmin h4">Lista dos pets</h1>
 
-        <table class=" m-3 table table-striped">
-            <thead>
+        <div class="m-3 row">
+        <table class="table table-striped">
+            <thead class="m-3">
                 <tr>
                     <th>ID</th>
                     <th>Imagem</th>
@@ -54,6 +56,7 @@
 
             </tbody>
         </table>
+    </div>
     </main>
     @include('layouts.footer')
 

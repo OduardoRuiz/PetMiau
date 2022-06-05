@@ -26,15 +26,15 @@
                     </div>
                 </a>
 
-                    <div>
+                <div>
 
-                        <div class="mb-3">
-                            <span style="color: black" class="fs-4"> {{ $user->name }}</span>
-                        </div>
-              
+                    <div class="mb-3">
+                        <span style="color: black" class="fs-4"> {{ $user->name }}</span>
+                    </div>
+
+                </div>
+
             </div>
-
-        </div>
         </div>
 
 
@@ -76,3 +76,5 @@
 
     </main>
     @include('layouts.footer')
+
+</body>

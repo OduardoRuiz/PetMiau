@@ -26,7 +26,7 @@ class VacinasController extends Controller
 
         Vacina::create($request->all());
         session()->flash("sucesso", 'vacina cadastrado com sucesso');
-        return redirect(route('tipo.index'));
+        return redirect(route('vacina.index'));
 
     }
 
