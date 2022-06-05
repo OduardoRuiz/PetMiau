@@ -40,15 +40,6 @@
                     <td>{{ $endereco->uf }}</td>
                     <td>{{ $endereco->cep }}</td>
                     <td>{{ $endereco->contato }}</td>
-                    <td>
-
-
-                        <form method="POST" action="{{ Route('endereco.destroy', $id = $endereco->id) }}" class="d-inline">
-                            @method('DELETE')
-                            @csrf
-                            <button type="submit" class="btn btn-sm btn-danger" onsubmit="return remover()">Apagar</button>
-                        </form>
-                    </td>
                 </tr>
 
                 @endforeach

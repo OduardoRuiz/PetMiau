@@ -9,7 +9,7 @@
             </div>
         @endif
 
-        <h1 class="titleAdmin h4">Apagar usuários</h1>
+        <h1 class="titleAdmin h4">Lista de Usuários</h1>
 
         <div class="row m-3">
             <table class="table table-striped ">
@@ -18,7 +18,6 @@
                         <th>ID</th>
                         <th>Nome</th>
                         <th>imagem</th>
-                        <th>Opção</th>
 
                     </tr>
                 </thead>
@@ -29,17 +28,7 @@
                             <td>{{ $user->name }}</td>
                             <td><img src="{{ $user->imagem }}" style="width:35px"></td>
 
-                            <td>
-
-
-                                <form method="POST" action="{{ Route('user.destroy', $id = $user->id) }}"
-                                    class="d-inline">
-                                    @method('DELETE')
-                                    @csrf
-                                    <button type="submit" class="btn btn-sm btn-danger"
-                                        onsubmit="return remover()">Apagar</button>
-                                </form>
-                            </td>
+                       
                         </tr>
                     @endforeach
 
