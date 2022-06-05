@@ -1,5 +1,21 @@
 @include('layouts.header')
 
+<script>
+    window.onload = function() {
+        var element = document.getElementById("upload");
+        element.addEventListener("change", function() {
+            var size = element.files[0].size;
+            console.log(size);
+            if (size <= 275910) { //1MB         
+            } else {
+                alert('Imagem muito grande por gentileza escolher outra menor '); //Acima do limite
+                element.value = ""; //Limpa o campo          
+            }
+            event.preventDefault();
+        });
+    };
+</script>
+
 <body>
     @include('layouts.menu')
 
@@ -23,7 +39,7 @@
             @endphp
 
             <span class="form-label ml-2">Data de nascimento do seu pet</span>
-            <input type="date" name="data_nascimento" class="form-control datepicker" required max={{$hoje}}>
+            <input type="date" name="data_nascimento" class="form-control datepicker" required max={{ $hoje }}>
         </div>
 
 
@@ -45,7 +61,7 @@
 
         <div class="form-group mt-4 campoDigitar">
             <span class="form-label ml-2">Adicione uma foto do seu pet</span>
-            <input type="file" class="form-control" name="imagem" accept="image/*">
+            <input type="file" id="upload" class="form-control" name="imagem" accept="image/*">
         </div>
 
         <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Cadastrar Pet</button>
