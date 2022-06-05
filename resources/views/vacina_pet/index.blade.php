@@ -32,6 +32,7 @@
                             <span class="form-label">Nome da vacina</span>
                             <select class="form-select" name="vacina_id" required>
                                 @foreach ($nomes as $nome)
+                                    <option value="none" selected disabled hidden>Escolha uma vacina</option>
                                     <option value="{{ $nome->id }}">{{ $nome->nome }}</option>
                                 @endforeach
                             </select>
