@@ -45,7 +45,7 @@
 
         <div class="form-group mt-4 campoDigitar">
             <span class="form-label ml-2">Adicione uma foto do seu pet</span>
-            <input type="file" class="form-control" name="imagem">
+            <input type="file" class="form-control" name="imagem" accept="image/*">
         </div>
 
         <button type="submit" class="botaoCadastrar mt-4 btn-lg btn-block ">Cadastrar Pet</button>

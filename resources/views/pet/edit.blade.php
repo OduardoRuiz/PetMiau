@@ -57,7 +57,7 @@
 
         <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Imagem</span>
-            <input type="file" class="form-control" name="imagem">
+            <input type="file" class="form-control" accept="image/*" name="imagem">
         </div>
 
 

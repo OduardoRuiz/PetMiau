@@ -19,7 +19,7 @@
 
             <div class="form-group mt-4 campoDigitar">
                 <label class="form-label ml-2" for="">Sua foto</label>
-                <input type="file" class="form-control" name="imagem">
+                <input type="file" class="form-control" accept="image/*" name="imagem">
 
             </div>
 

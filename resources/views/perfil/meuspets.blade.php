@@ -9,7 +9,7 @@
     <main class="m-5 ">
 
         @if (session()->has('sucesso'))
-        <div class="w-50 text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
+        <div class=" text-center d-flex justify-content-center mt-5 alert alert-success" role="alert">
             <div class=" balaoAlert">{{ session()->get('sucesso') }}</div>
         </div>
         @endif
