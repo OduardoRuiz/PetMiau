@@ -15,17 +15,27 @@
 
 
         <div class="minhaConta mb-3 mt-2">
-            <div class="">
-                <img src="{{ $user->imagem }}" style="width:100px">
-            </div>
-            <div class="mb-3">
-                <span> {{ $user->name }}</span>
-            </div>
-            <div>
-                <a href="{{ Route('user.edit', $user->id) }}" class="btn btn-sm btn-warning">Editar meu perfil</a>
-            </div>
-        </div>
 
+            <div class="profilepic">
+                <a href="{{ Route('user.edit', $user->id) }}" class="text-decoration-none">
+                    <img class="profilepic__image" src="{{ $user->imagem }}" style="width:100px">
+
+                    <div class="profilepic__content">
+                        <span class="profilepic__icon"><i class="fas fa-camera"></i></span>
+                        <span class="profilepic__text">Editar Perfil</span>
+                    </div>
+                </a>
+
+                    <div>
+
+                        <div class="mb-3">
+                            <span style="color: black" class="fs-4"> {{ $user->name }}</span>
+                        </div>
+              
+            </div>
+
+        </div>
+        </div>
 
 
         @if (!$endereco)
@@ -34,7 +44,7 @@
             </div>
         @else
             <div class="minhaConta enderecoDiv mb-3">
-                <h2 class="h4">Informações</h2>
+                <h2 class="h4 ml-3">Informações</h2>
 
                 <div class="minhaContaEndereco">
                     <label for="" class="enderecoConta">Endereço:</label>
@@ -56,7 +66,7 @@
                     {{ $endereco->contato }}
                 </div>
 
-                <div>
+                <div class="ml-4">
                     <a href="{{ Route('endereco.edit', $endereco->id) }}" class="btn btn-sm btn-warning">Editar
                         informações</a>
                 </div>

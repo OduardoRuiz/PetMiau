@@ -147,7 +147,7 @@ body {
 
 .minhaContaEndereco {
     text-align: left;
-    margin-left: 50px;
+    margin-left: 25px;
 
 }
 
@@ -157,7 +157,8 @@ body {
 }
 
 .enderecoDiv {
-    text-align: center;
+    text-align: left;
+    margin-left: 25px;
 }
 
 .enderecoConta {
@@ -251,8 +252,8 @@ body {
 
 
 .carousel-inner img {
-    max-width: 70rem;
-    max-height: 31rem;
+    max-width: 60rem;
+    max-height: 27rem;
     min-height: 25rem;
     min-width: 25rem;
     border-radius: 0.2em;
@@ -393,3 +394,57 @@ body {
 .content {
     min-height: calc(100vh - 70px);
 }
+
+.profilepic {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profilepic:hover .profilepic__content {
+    opacity: 1;
+  }
+  
+  .profilepic:hover .profilepic__image {
+    opacity: .5;
+
+  }
+  
+  .profilepic__image {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+  }
+  
+  .profilepic__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+  }
+  
+  .profilepic__icon {
+    color: black;
+    padding-bottom: 8px;
+  }
+  
+  .fas {
+    font-size: 1rem;
+  }
+  
+  .profilepic__text {
+    text-transform: uppercase;
+    font-size: 1rem !important;
+    width: 50%;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
