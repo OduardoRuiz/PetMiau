@@ -79,9 +79,9 @@
                                 $nascimento = $pet->data_nascimento;
                                 $idade = (int) $hoje - (int) $nascimento;
                             @endphp
-                            <p class="petIndex">Nome: {{ $pet->nome }} </p>
-                            <p class="petIndex">Peso: {{ $pet->peso }}kg</p>
-                            <p class="petIndex">Idade: {{ $idade }}</p>
+                            <p class="petIndex"><span class="fw-bold">Nome:</span>  {{ $pet->nome }} </p>
+                            <p class="petIndex"><span class="fw-bold">Peso:</span>  {{ $pet->peso }}kg</p>
+                            <p class="petIndex"><span class="fw-bold">Idade: </span>  {{ $idade }}</p>
                         </div>
 
 
