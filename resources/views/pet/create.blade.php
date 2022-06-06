@@ -54,7 +54,7 @@
             <span class="form-label ml-2">Seu pet é um:</span>
             <select class="form-select form-control" name="tipo_id" required>
                 @foreach ($tipos as $tipo)
-                    <option value="none" selected disabled hidden>Escolha a espécie </option>
+                    <option value="3" selected hidden>Escolha a espécie </option>
                     <option value="{{ $tipo->id }}">{{ $tipo->nome }}</option>
                 @endforeach
             </select>

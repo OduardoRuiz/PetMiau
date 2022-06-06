@@ -49,7 +49,7 @@
         <div class="form-group mt-3 campoDigitar">
             <span class="form-label">Tipo</span>
 
-            <select class="form-select" name="tipo_id" id="">
+            <select class="form-select" name="tipo_id" id="" required>
                 @foreach ($tipos as $tipo)
                     <option value="{{ $tipo->id }}" @if ($tipo->id == $pet->tipo_id) selected @endif>
                         {{ $tipo->nome }}</option>
