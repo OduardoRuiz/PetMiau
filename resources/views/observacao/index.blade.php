@@ -34,7 +34,7 @@
 
                         <div class="row m-1">
                             <span class="form-label"></span>
-                            <textarea class="form-control" name="texto"></textarea>
+                            <textarea required class="form-control" name="texto"></textarea>
 
 
                         </div>
@@ -98,8 +98,7 @@
                                                 @method('PATCH')
                                                 @csrf
                                                 <div class="">
-                                                    <input type="text" name="texto" class="form-control m-1"
-                                                        value="{{ $observacao1->texto }}">
+                                                    <textarea required type="text" name="texto" class="form-control m-1">{{ $observacao1->texto }}</textarea>
                                                 </div>
 
                                         </div>
